@@ -1,22 +1,51 @@
-import React from 'react'
-import logo from '../assets/logo/ucsc.png'
-import uniLogo from "../assets/logo/logo.png"
+import React from 'react';
+import logo from '../assets/logo/ucsc.png';
+import uniLogo from '../assets/logo/logo.png';
 
 const Home = () => {
    return (
       <>
          <header>
             <div className="logo">
-               <img src={logo} alt="" />
-
+               <a href="">
+                  <img src={logo} alt="" />
+               </a>
             </div>
-            <h1>Bachelor of Information Technology</h1>
+            <div className="heading-text">
+               <h1>
+                  Bachelor of Information Technology <br />
+                  <span>University of Colombo School of Computing</span>
+               </h1>
+            </div>
+
             <div className="uni-logo">
                <img src={uniLogo} alt="" />
             </div>
          </header>
+         <nav>
+            <ul className="nav-links">
+               <li>
+                  <a href="">Home</a>
+               </li>
+               <li>
+                  <a href="">About</a>
+               </li>
+               <li>
+                  <a href="">FIT</a>
+               </li>
+               <li>
+                  <a href="">Learning</a>
+               </li>
+               <li>
+                  <a href="">Examination</a>
+               </li>
+               <li>
+                  <a href="">Short Courses</a>
+               </li>
+            </ul>
+         </nav>
       </>
-   )
-}
+   );
+};
 
-export default Home
+export default Home;
