@@ -1,4 +1,5 @@
 import React from 'react';
+import ControlledCarousel from '../components/ControlledCarousel'
 import '../styles/Home.css'
 import logo from '../assets/logo/ucsc.png';
 import uniLogo from '../assets/logo/logo.png';
@@ -45,6 +46,7 @@ const Home = () => {
                </li>
             </ul>
          </nav>
+         <ControlledCarousel />
       </>
    );
 };
