@@ -1,13 +1,28 @@
+body {
+
+   filter: brightness();
+
+}
+
 header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+   transform: translateY(0);
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    justify-content: space-between;
-   padding: 0 1rem;
+   padding: 1rem 1rem;
+   margin-bottom: 10vh;
    height: 100%;
+
 }
 
 header h1 {
    font-size: 2.4rem;
+   color: #fff;
 }
 
 .logo img {
@@ -30,17 +45,25 @@ header h1 {
    text-align: center;
 }
 
-span {
+#ucsc {
    font-size: 1.3rem;
    display: flex;
    justify-content: center;
+   color: #fff;
 }
 
 .nav-links {
+   position: relative;
+   top: 130px;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+   margin-bottom: 60px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    list-style: none;
+   background: #bdbdbd;
 }
 
 .nav-links li {
@@ -51,6 +74,10 @@ span {
    font-weight: 500;
    font-size: 1.3rem;
    text-decoration: none;
+   color: #000000;
+   /* background: #ffffff; */
+   padding: 5px 20px;
+   border-radius: 50px;
 }
 
 .nav-links a:hover {
@@ -70,7 +97,7 @@ span {
       font-size: 1.8rem;
    }
 
-   span {
+   #ucsc {
       font-size: 1.2rem;
    }
 }
@@ -80,7 +107,7 @@ span {
       font-size: 1.6rem;
    }
 
-   span {
+   #ucsc {
       font-size: 1rem;
    }
 }
@@ -90,11 +117,91 @@ span {
       font-size: 1.4rem;
    }
 
-   span {
+   #ucsc {
       font-size: 1rem;
    }
 
    .nav-links {
       display: none;
    }
+}
+
+.front-main-banner-picture {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   overflow: hidden;
+   object-position: top right;
+   object-fit: cover;
+}
+
+.front-main-banner-picture img {
+   display: block;
+   filter: brightness(0.6);
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: top right;
+}
+
+.front-banner-text {
+   position: relative;
+   z-index: 9999;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 100px;
+}
+
+.front-banner-text h3 {
+   text-align: center;
+   font-size: 4rem;
+   font-weight: 700;
+   color: #fff;
+   margin-bottom: 2rem;
+}
+
+#text-span {
+   color: rgb(0, 0, 0);
+}
+
+.front-banner-text p {
+   margin-bottom: 4rem;
+   text-align: center;
+   font-size: 1.8rem;
+   max-width: 51rem;
+   color: #fff;
+}
+
+#schedule-btn {
+   width: 200px;
+   border-radius: 50px;
+   border: none;
+   background: yellow;
+   padding: 20px 10px;
+   transition: 0.3s ease;
+}
+
+.ri-arrow-right-up-line {
+   display: none;
+}
+
+#schedule-btn a {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #000;
+   font-weight: 500;
+}
+
+#schedule-btn:hover {
+   transform: scale(1.0);
+}
+
+#schedule-btn:hover .ri-arrow-right-up-line {
+   display: inline;
 }

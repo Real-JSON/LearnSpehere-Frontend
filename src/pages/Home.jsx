@@ -1,8 +1,9 @@
 import React from 'react';
-import ControlledCarousel from '../components/ControlledCarousel'
-import '../styles/Home.css'
+import ControlledCarousel from '../components/ControlledCarousel';
+import '../styles/Home.css';
 import logo from '../assets/logo/ucsc.png';
 import uniLogo from '../assets/logo/logo.png';
+import homeImg from '../assets/3837.jpg';
 
 const Home = () => {
    return (
@@ -16,7 +17,9 @@ const Home = () => {
             <div className="heading-text">
                <h1>
                   Bachelor of Information Technology <br />
-                  <span>University of Colombo School of Computing</span>
+                  <span id="ucsc">
+                     University of Colombo School of Computing
+                  </span>
                </h1>
             </div>
 
@@ -33,7 +36,7 @@ const Home = () => {
                   <a href="">About</a>
                </li>
                <li>
-                  <a href="">FIT</a>
+                  <a href="">Students</a>
                </li>
                <li>
                   <a href="">Learning</a>
@@ -46,7 +49,25 @@ const Home = () => {
                </li>
             </ul>
          </nav>
-         <ControlledCarousel />
+
+         <section>
+            <picture className='front-main-banner-picture'>
+               <img src={homeImg} alt="" />
+            </picture>
+            <div className="front-banner-text">
+               <h3>
+                  Your Best E-Learning Platform <br />
+                  <span id="text-span">At Your Fingertips</span>
+               </h3>
+               <p>
+                  A fully guided team foundation and management service from
+                  Mobilunity: Higher scalability with lower managerial
+                  overheads.
+               </p>
+               <button id='schedule-btn'><a href="">reserve your seat <i class="ri-arrow-right-up-line"></i></a></button>
+            </div>
+
+         </section>
       </>
    );
 };
