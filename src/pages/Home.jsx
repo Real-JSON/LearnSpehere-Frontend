@@ -22,7 +22,6 @@ const Home = () => {
                   </span>
                </h1>
             </div>
-
             <div className="uni-logo">
                <img src={uniLogo} alt="" />
             </div>
@@ -49,22 +48,28 @@ const Home = () => {
                </li>
             </ul>
          </nav>
-
          <section>
-            <picture className='front-main-banner-picture'>
-               <img src={homeImg} alt="" />
-            </picture>
-            <div className="front-banner-text">
-               <h3>
-                  Your Best E-Learning Platform <br />
-                  <span id="text-span">At Your Fingertips</span>
-               </h3>
-               <p>
-                  A fully guided team foundation and management service from
-                  Mobilunity: Higher scalability with lower managerial
-                  overheads.
-               </p>
-               <button id='schedule-btn'><a href="">reserve your seat <i class="ri-arrow-right-up-line"></i></a></button>
+            <div className="front-main-banner">
+               <picture className="front-main-banner-picture">
+                  <img src={homeImg} alt="" />
+               </picture>
+               <div className="front-banner-text">
+                  <h3>
+                     Your Best E-Learning Platform <br />
+                     <span id="text-span">At Your Fingertips</span>
+                  </h3>
+                  <p>
+                     "Unlock the power of learning with our top-tier e-learning platform.
+                     Accessible anytime, anywhere, right at your fingertips.
+                     Learn, grow, and succeed with ease!"
+                  </p>
+                  <button id="schedule-btn">
+                     <a href="">
+                        reserve your seat{' '}
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </button>
+               </div>
             </div>
 
          </section>

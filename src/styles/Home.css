@@ -1,9 +1,3 @@
-body {
-
-   filter: brightness();
-
-}
-
 header {
    position: relative;
    top: 0;
@@ -17,7 +11,6 @@ header {
    padding: 1rem 1rem;
    margin-bottom: 10vh;
    height: 100%;
-
 }
 
 header h1 {
@@ -87,12 +80,145 @@ header h1 {
    background-color: #d4d4d4;
 }
 
+.front-main-banner-picture {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.front-main-banner-picture img {
+   filter: brightness(0.6);
+   width: 100%;
+   min-height: 100vh;
+   object-fit: cover;
+   object-position: center;
+}
+
+.front-banner-text {
+   position: relative;
+   z-index: 9999;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 5vh 5vw;
+}
+
+.front-banner-text h3 {
+   font-size: clamp(2rem, 5vw, 4rem);
+   font-weight: 700;
+   color: #ffff00;
+   margin-bottom: 2rem;
+}
+
+#text-span {
+   color: #f7f7f7;
+}
+
+.front-banner-text p {
+   margin-bottom: 3rem;
+   text-align: center;
+   font-size: clamp(1rem, 2vw, 1.8rem);
+   max-width: 90%;
+   color: #fff;
+}
+
+#schedule-btn {
+   width: 255px;
+   border-radius: 50px;
+   border: none;
+   background: yellow;
+   padding: 18px 0px;
+   transition: transform 0.3s ease, background-color 0.3s ease,
+      box-shadow 0.3s ease;
+}
+
+.ri-arrow-right-up-line {
+   transition: 0.3s ease;
+}
+
+#schedule-btn a {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #000;
+   font-weight: 500;
+   transition: color 0.3s ease;
+}
+
+#schedule-btn:hover {
+   transform: scale(1.06);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#schedule-btn:hover .ri-arrow-right-up-line {
+   display: inline;
+}
+
+
 /* === media queries */
 
 @media (max-width: 1072px) {
    header h1 {
       font-size: 2rem;
    }
+}
+
+@media (max-width: 960px) {
+   .nav-links {
+      display: none;
+   }
+
+   .front-main-banner-picture img {
+      height: 100vh;
+      object-fit: cover;
+      object-position: top right;
+   }
+
+   .front-banner-text {
+      transform: translateY(-50px);
+   }
+
+   .front-banner-text h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+   }
+
+   .front-banner-text p {
+      margin-bottom: 3rem;
+      text-align: center;
+      font-size: 1.5rem;
+      max-width: 51rem;
+      color: #fff;
+   }
+
+   #schedule-btn {
+      width: 255px;
+      border-radius: 50px;
+      border: none;
+      background: yellow;
+      padding: 14px 0px;
+      transition: transform 0.3s ease, background-color 0.3s ease,
+         box-shadow 0.3s ease;
+   }
+
+   .ri-arrow-right-up-line {
+      transition: 0.3s ease;
+   }
+
+   #schedule-btn a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.3s ease;
+   }
+
 }
 
 @media (max-width: 768px) {
@@ -102,6 +228,10 @@ header h1 {
 
    #ucsc {
       font-size: 1.2rem;
+   }
+
+   .front-banner-text {
+      transform: translateY(-65px);
    }
 }
 
@@ -129,84 +259,32 @@ header h1 {
    }
 }
 
-.front-main-banner-picture {
-   display: block;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 0;
-   overflow: hidden;
-   object-position: top right;
-   object-fit: cover;
+@media (max-width:420px) {
+   .front-banner-text h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+   }
+
+   .front-banner-text p {
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 51rem;
+      color: #fff;
+   }
 }
 
-.front-main-banner-picture img {
-   display: block;
-   filter: brightness(0.6);
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   object-position: top right;
-}
+@media (min-width: 295px) and (max-width: 560px) {
 
-.front-banner-text {
-   position: relative;
-   z-index: 9999;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 50px 30px;
-}
 
-.front-banner-text h3 {
-   text-align: center;
-   font-size: 4rem;
-   font-weight: 700;
-   color: #ffff00;
-   margin-bottom: 2rem;
-}
+   .front-banner-text p {
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 51rem;
+      color: #fff;
+   }
 
-#text-span {
-   color: #f7f7f7;
-}
-
-.front-banner-text p {
-   margin-bottom: 4rem;
-   text-align: center;
-   font-size: 1.8rem;
-   max-width: 51rem;
-   color: #fff;
-}
-
-#schedule-btn {
-   width: 200px;
-   border-radius: 50px;
-   border: none;
-   background: yellow;
-   padding: 20px 0px;
-   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.ri-arrow-right-up-line {
-   transition: 0.3s ease;
-}
-
-#schedule-btn a {
-   text-transform: uppercase;
-   text-decoration: none;
-   color: #000;
-   font-weight: 500;
-   transition: color 0.3s ease;
-}
-
-#schedule-btn:hover {
-   transform: scale(1.06);
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#schedule-btn:hover .ri-arrow-right-up-line {
-   display: inline;
+   .front-banner-text {
+      transform: translateY(-50px);
+   }
 }
