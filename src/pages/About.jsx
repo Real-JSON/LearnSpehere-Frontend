@@ -8,7 +8,7 @@ const About = () => {
             <div className="about-area">
                <div className="about-text-wrapper">
                   <div className="about-text">
-                     <h3>Your best Learning Platform </h3>
+                     <h3>Your Best Learning Platform </h3>
                      <p>
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Porro dicta, ea eveniet

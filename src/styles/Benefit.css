@@ -1,0 +1,28 @@
+.benefit-area {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 30vh;
+}
+
+.benefit-icon i {
+   background: #fb2812;
+   display: flex;
+   border-radius: 50px;
+   padding: 10px;
+   font-size: 36px;
+}
+
+.benefit-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.icon-text {
+   padding: 0px 10px;
+}
+
+.icon-text p {
+   font-size: 1.1rem;
+   font-weight: 500;
+}
