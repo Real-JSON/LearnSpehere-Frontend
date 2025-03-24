@@ -9,69 +9,74 @@ const Home = () => {
    return (
       <>
          <header>
-            <div className="logo">
-               <a href="">
-                  <img src={logo} alt="" />
-               </a>
-            </div>
-            <div className="heading-text">
-               <h1>
-                  Bachelor of Information Technology <br />
-                  <span id="ucsc">
-                     University of Colombo School of Computing
-                  </span>
-               </h1>
-            </div>
-            <div className="uni-logo">
-               <img src={uniLogo} alt="" />
+            <div className="header-wrapper">
+               <div className="header-logo">
+                  <picture>
+                     <a href="" aria-label="home">
+                        <img src={logo} alt="ucsc_logo" />
+                     </a>
+                  </picture>
+               </div>
+               <div className="heading-text">
+                  <h1>Bachelor of Information Technology</h1>
+                  <br />
+                  <p>University of Colombo School of Computing</p>
+               </div>
+               <div className="header-logo-two">
+                  <picture>
+                     <img src={uniLogo} alt="uni_logo" />
+                  </picture>
+               </div>
             </div>
          </header>
          <nav>
             <ul className="nav-links">
                <li>
-                  <a href="">Home</a>
+                  <a href="#">Home</a>
                </li>
                <li>
-                  <a href="">About</a>
+                  <a href="#">About</a>
                </li>
                <li>
-                  <a href="">Students</a>
+                  <a href="#">Students</a>
                </li>
                <li>
-                  <a href="">Learning</a>
+                  <a href="#">Learning</a>
                </li>
                <li>
-                  <a href="">Examination</a>
+                  <a href="#">Examination</a>
                </li>
                <li>
-                  <a href="">Short Courses</a>
+                  <a href="#">Short Courses</a>
                </li>
             </ul>
          </nav>
          <section>
             <div className="front-main-banner">
                <picture className="front-main-banner-picture">
-                  <img src={homeImg} alt="" />
+                  <img src={homeImg} alt="home_banner_image" />
                </picture>
                <div className="front-banner-text">
                   <h3>
                      Your Best E-Learning Platform <br />
-                     <span id="text-span">At Your Fingertips</span>
+                     <span id="banner-text-span">
+                        At Your Fingertips
+                     </span>
                   </h3>
                   <p>
-                     "Unlock the power of learning with our top-tier e-learning platform.
-                     Accessible anytime, anywhere, right at your fingertips.
-                     Learn, grow, and succeed with ease!"
+                     "Unlock the power of learning with our top-tier
+                     e-learning platform. Accessible anytime, anywhere,
+                     right at your fingertips. Learn, grow, and succeed
+                     with ease!"
                   </p>
                   <button id="schedule-btn">
-                     <a href="">
+                     <a href="" aria-label="reserve your seat">
                         reserve your seat{' '}
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </button>
                </div>
             </div>
-
          </section>
       </>
    );
