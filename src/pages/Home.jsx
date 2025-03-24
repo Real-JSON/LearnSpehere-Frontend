@@ -12,14 +12,13 @@ const Home = () => {
             <div className="header-wrapper">
                <div className="header-logo">
                   <picture>
-                     <a href="" aria-label="home">
+                     <a href="#" aria-label="home">
                         <img src={logo} alt="ucsc_logo" />
                      </a>
                   </picture>
                </div>
                <div className="heading-text">
                   <h1>Bachelor of Information Technology</h1>
-                  <br />
                   <p>University of Colombo School of Computing</p>
                </div>
                <div className="header-logo-two">
@@ -32,22 +31,28 @@ const Home = () => {
          <nav>
             <ul className="nav-links">
                <li>
+                  <i class="ri-user-line"></i>
+               </li>
+               <li className="hideOnMobile">
                   <a href="#">Home</a>
                </li>
-               <li>
+               <li className="hideOnMobile">
                   <a href="#">About</a>
                </li>
-               <li>
+               <li className="hideOnMobile">
                   <a href="#">Students</a>
                </li>
-               <li>
+               <li className="hideOnMobile">
                   <a href="#">Learning</a>
                </li>
-               <li>
+               <li className="hideOnMobile">
                   <a href="#">Examination</a>
                </li>
-               <li>
+               <li className="hideOnMobile">
                   <a href="#">Short Courses</a>
+               </li>
+               <li>
+                  <i class="ri-menu-line"></i>
                </li>
             </ul>
          </nav>

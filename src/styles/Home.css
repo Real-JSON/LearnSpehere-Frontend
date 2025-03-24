@@ -1,290 +1,137 @@
-header {
+.header-wrapper {
    position: relative;
    top: 0;
    left: 0;
    right: 0;
    z-index: 999;
-   transform: translateY(0);
    display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
-   padding: 1rem 1rem;
-   margin-bottom: 10vh;
+   justify-content: space-around;
+   margin-top: 1rem;
    height: 100%;
+   padding: 0px 1vw;
 }
 
-header h1 {
-   font-size: 2.4rem;
-   color: #fff;
+.header-logo,
+.header-logo-two {
+   display: flex;
 }
 
-.logo img {
-   max-width: 100%;
+.header-logo img {
    width: 120px;
+   max-width: 100%;
+   height: auto;
 }
 
-.uni-logo img {
+.header-logo-two img {
    width: 90px;
    max-width: 100%;
+   height: auto;
 }
 
 .heading-text {
-   /* display: flex; */
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   text-align: center;
-}
-
-#ucsc {
-   font-size: 1.3rem;
    display: flex;
+   flex-direction: column;
+   align-items: center;
    justify-content: center;
-   color: #fff;
+   text-align: center;
+   width: 100%;
 }
 
 .nav-links {
-   position: absolute;
-   top: 140px;
+   position: relative;
+   z-index: 999;
    left: 0;
    right: 0;
-   z-index: 999;
    display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   list-style: none;
-   background: #f6f6f6;
-   padding: 3px 0;
-   margin: 0 15px;
+   justify-content: space-around;
+   margin-top: 2rem;
    border-radius: 50px;
+   background: #f3f3f3;
+   padding: 10px 0px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.nav-links ul {
+   width: 100%;
 }
 
 .nav-links li {
-   padding: 10px 50px;
-}
 
-.nav-links a {
-   font-weight: 500;
-   font-size: 1.3rem;
-   text-decoration: none;
-   text-align: center;
-   color: #000000;
-   /* background: #ffffff; */
-   padding: 5px 20px;
    border-radius: 50px;
    transition: 0.3s ease;
 }
 
-.nav-links a:hover {
-   background-color: #d4d4d4;
+.nav-links a {
+   text-align: center;
+   padding: 5px 20px;
+   font-size: 1.2rem;
 }
+
+.nav-links li:hover {
+   background: #cecece;
+}
+
+.hideOnMobile {
+   display: block;
+}
+
+/* ===front-banner=== */
 
 .front-main-banner-picture {
    position: absolute;
    top: 0;
+   right: 0;
    left: 0;
    z-index: 0;
    width: 100%;
-   height: 100%;
-   overflow: hidden;
+
 }
 
 .front-main-banner-picture img {
-   filter: brightness(0.6);
    width: 100%;
-   min-height: 100vh;
+   height: 100vh;
+   filter: brightness(0.6);
    object-fit: cover;
    object-position: center;
 }
 
 .front-banner-text {
    position: relative;
-   z-index: 9999;
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
    text-align: center;
    padding: 5vh 5vw;
 }
 
 .front-banner-text h3 {
-   font-size: clamp(2rem, 5vw, 4rem);
-   font-weight: 700;
+   font-size: 4rem;
+   line-height: 12vh;
+   margin-bottom: 4vh;
    color: #ffff00;
-   margin-bottom: 2rem;
 }
 
-#text-span {
-   color: #f7f7f7;
+#banner-text-span {
+   color: #f3f3f3;
 }
 
 .front-banner-text p {
-   margin-bottom: 3rem;
-   text-align: center;
-   font-size: clamp(1rem, 2vw, 1.8rem);
-   max-width: 90%;
+   font-size: 2rem;
+   margin-bottom: 4vh;
    color: #fff;
 }
 
 #schedule-btn {
-   width: 255px;
+   background: #ffff00;
+   padding: 1.5vw;
    border-radius: 50px;
-   border: none;
-   background: yellow;
-   padding: 18px 0px;
-   transition: transform 0.3s ease, background-color 0.3s ease,
-      box-shadow 0.3s ease;
-}
-
-.ri-arrow-right-up-line {
-   transition: 0.3s ease;
+   max-width: 100%;
+   margin-bottom: 8vh;
 }
 
 #schedule-btn a {
    text-transform: uppercase;
-   text-decoration: none;
-   color: #000;
    font-weight: 500;
-   transition: color 0.3s ease;
-}
-
-#schedule-btn:hover {
-   transform: scale(1.06);
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#schedule-btn:hover .ri-arrow-right-up-line {
-   display: inline;
-}
-
-
-/* === media queries */
-
-@media (max-width: 1072px) {
-   header h1 {
-      font-size: 2rem;
-   }
-}
-
-@media (max-width: 960px) {
-   .nav-links {
-      display: none;
-   }
-
-   .front-main-banner-picture img {
-      height: 100vh;
-      object-fit: cover;
-      object-position: top right;
-   }
-
-   .front-banner-text {
-      transform: translateY(-50px);
-   }
-
-   .front-banner-text h3 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-   }
-
-   .front-banner-text p {
-      margin-bottom: 3rem;
-      text-align: center;
-      font-size: 1.5rem;
-      max-width: 51rem;
-      color: #fff;
-   }
-
-   #schedule-btn {
-      width: 255px;
-      border-radius: 50px;
-      border: none;
-      background: yellow;
-      padding: 14px 0px;
-      transition: transform 0.3s ease, background-color 0.3s ease,
-         box-shadow 0.3s ease;
-   }
-
-   .ri-arrow-right-up-line {
-      transition: 0.3s ease;
-   }
-
-   #schedule-btn a {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #000;
-      font-weight: 500;
-      transition: color 0.3s ease;
-   }
-
-}
-
-@media (max-width: 768px) {
-   header h1 {
-      font-size: 1.8rem;
-   }
-
-   #ucsc {
-      font-size: 1.2rem;
-   }
-
-   .front-banner-text {
-      transform: translateY(-65px);
-   }
-}
-
-@media (max-width: 694px) {
-   header h1 {
-      font-size: 1.6rem;
-   }
-
-   #ucsc {
-      font-size: 1rem;
-   }
-}
-
-@media (max-width: 634px) {
-   header h1 {
-      font-size: 1.4rem;
-   }
-
-   #ucsc {
-      font-size: 1rem;
-   }
-
-   .nav-links {
-      display: none;
-   }
-}
-
-@media (max-width:420px) {
-   .front-banner-text h3 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-   }
-
-   .front-banner-text p {
-      text-align: center;
-      font-size: 1.2rem;
-      max-width: 51rem;
-      color: #fff;
-   }
-}
-
-@media (min-width: 295px) and (max-width: 560px) {
-
-
-   .front-banner-text p {
-      text-align: center;
-      font-size: 1.2rem;
-      max-width: 51rem;
-      color: #fff;
-   }
-
-   .front-banner-text {
-      transform: translateY(-50px);
-   }
+   font-size: 1.2rem;
 }

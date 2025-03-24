@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/About.css'
+import React from 'react';
+import '../styles/About.css';
 
 const About = () => {
    return (
@@ -9,12 +9,20 @@ const About = () => {
                <div className="about-text-wrapper">
                   <div className="about-text">
                      <h3>Your best Learning Platform </h3>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Porro dicta, ea eveniet
+                        adipisci veniam nostrum accusamus facilis,
+                        quidem odio beatae accusantium dolorem? Omnis
+                        distinctio accusamus, natus aperiam earum hic
+                        cupiditate.
+                     </p>
                   </div>
                </div>
             </div>
          </section>
       </>
-   )
-}
+   );
+};
 
-export default About
+export default About;

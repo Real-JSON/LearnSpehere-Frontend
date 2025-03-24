@@ -4,7 +4,7 @@ import img1 from '../assets/SwiperImages/1.jpg'
 import img2 from '../assets/SwiperImages/2.jpg'
 import img3 from '../assets/SwiperImages/3.jpg'
 import img4 from '../assets/SwiperImages/4.jpg'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ControlledCarousel() {
    const [index, setIndex] = useState(0);
