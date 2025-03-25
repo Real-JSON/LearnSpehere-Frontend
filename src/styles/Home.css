@@ -85,7 +85,6 @@
    left: 0;
    z-index: 0;
    width: 100%;
-
 }
 
 .front-main-banner-picture img {
@@ -107,7 +106,6 @@
 
 .front-banner-text h3 {
    font-size: 4rem;
-   line-height: 12vh;
    margin-bottom: 4vh;
    color: #ffff00;
 }
@@ -117,17 +115,18 @@
 }
 
 .front-banner-text p {
-   font-size: 2rem;
-   margin-bottom: 4vh;
+   max-width: 90%;
+   font-size: 1.8rem;
+   margin-bottom: 12vh;
    color: #fff;
 }
 
 #schedule-btn {
+   height: 9vh;
    background: #ffff00;
-   padding: 1.5vw;
+   padding: 0 1.5vw;
    border-radius: 50px;
    max-width: 100%;
-   margin-bottom: 8vh;
 }
 
 #schedule-btn a {

@@ -1,77 +1,74 @@
 import React from 'react';
-import '../styles/Course.css'
+import '../styles/Course.css';
 import courseimg from '../assets/freepik__background__78432.png';
 
 const Course = () => {
    return (
       <>
-         <section>
-            <div className="course-wrapper">
-               <div className="course-area">
-                  <div className="course-image">
-                     <img src={courseimg} alt="" />
-                  </div>
-                  <div className="course-heading">
-                     <h2>Benefits From Our Online Learning</h2>
-                     <div className="course-types">
-                        <div className="course">
-                           <div className="course-icon">
-                              <i class="ri-graduation-cap-fill"></i>
-                           </div>
-                           <div className="course-name">
-                              <h3>Online Degrees</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Dignissimos,
-                                 aspernatur.
-                              </p>
-                           </div>
+         <div className="course-container">
+            <section className="courses">
+               <div className="course-image">
+                  <img src={courseimg} alt="" />
+               </div>
+               <div className="course-heading">
+                  <h2>Benefits From Our Online Learning</h2>
+                  <div className="course-content">
+                     <div className="course">
+                        <div className="course-icon">
+                           <i class="ri-graduation-cap-fill"></i>
                         </div>
-                        <div className="course">
-                           <div className="course-icon">
-                              <i class="ri-book-open-fill"></i>
-                           </div>
-                           <div className="course-name">
-                              <h3>Online Degrees</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Dignissimos,
-                                 aspernatur.
-                              </p>
-                           </div>
+                        <div className="course-name">
+                           <h3>Online Degrees</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Dignissimos,
+                              aspernatur.
+                           </p>
                         </div>
-                        <div className="course">
-                           <div className="course-icon">
-                              <i class="ri-play-large-fill"></i>
-                           </div>
-                           <div className="course-name">
-                              <h3>Online Degrees</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Dignissimos,
-                                 aspernatur.
-                              </p>
-                           </div>
+                     </div>
+                     <div className="course">
+                        <div className="course-icon">
+                           <i class="ri-book-open-fill"></i>
                         </div>
-                        <div className="course">
-                           <div className="course-icon">
-                              <i class="ri-group-fill"></i>
-                           </div>
-                           <div className="course-name">
-                              <h3>Online Degrees</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Dignissimos,
-                                 aspernatur.
-                              </p>
-                           </div>
+                        <div className="course-name">
+                           <h3>Online Degrees</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Dignissimos,
+                              aspernatur.
+                           </p>
+                        </div>
+                     </div>
+                     <div className="course">
+                        <div className="course-icon">
+                           <i class="ri-play-large-fill"></i>
+                        </div>
+                        <div className="course-name">
+                           <h3>Online Degrees</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Dignissimos,
+                              aspernatur.
+                           </p>
+                        </div>
+                     </div>
+                     <div className="course">
+                        <div className="course-icon">
+                           <i class="ri-group-fill"></i>
+                        </div>
+                        <div className="course-name">
+                           <h3>Online Degrees</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Dignissimos,
+                              aspernatur.
+                           </p>
                         </div>
                      </div>
                   </div>
-
                </div>
-            </div>
-         </section>
+            </section>
+         </div>
       </>
    );
 };

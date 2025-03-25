@@ -1,6 +1,6 @@
 .about-area {
    display: flex;
-   margin-top: 15vh;
+   margin-top: 25vh;
    justify-content: center;
 }
 
@@ -19,5 +19,4 @@
 .about-text p {
    max-width: 60%;
    font-size: 1.5rem;
-   margin-bottom: 20vh;
 }
