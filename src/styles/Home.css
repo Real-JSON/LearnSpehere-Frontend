@@ -42,7 +42,7 @@
    z-index: 999;
    left: 0;
    right: 0;
-   display: flex;
+   display: none;
    justify-content: space-around;
    margin-top: 2rem;
    border-radius: 50px;

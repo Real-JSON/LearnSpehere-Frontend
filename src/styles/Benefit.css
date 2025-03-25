@@ -1,5 +1,5 @@
 .benefit-area {
-   display: flex;
+   display: none;
    justify-content: space-around;
    margin-bottom: 30vh;
 }
