@@ -121,6 +121,21 @@
    color: #fff;
 }
 
+#reserve-your-seat {
+   display: flex;
+   gap: 5px;
+   background-color: #ffff00;
+   padding: 10px 20px;
+   border-radius: 50px;
+   text-transform: uppercase;
+   font-weight: 500;
+   transition: 0.4s ease;
+}
+
+#reserve-your-seat:hover {
+   transform: scale(1.1);
+}
+
 #schedule-btn {
    height: 9vh;
    background: #ffff00;

@@ -74,12 +74,7 @@ const Home = () => {
                      right at your fingertips. Learn, grow, and succeed
                      with ease!"
                   </p>
-                  <button id="schedule-btn">
-                     <a href="" aria-label="reserve your seat">
-                        reserve your seat{' '}
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </button>
+                  <a href="" id='reserve-your-seat' aria-label='reserve your seat'>reserve your seat<i class="ri-arrow-right-up-line"></i></a>
                </div>
             </div>
          </section>
