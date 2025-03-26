@@ -2,6 +2,7 @@
    width: 90%;
    margin: 25vh auto;
    padding: 0px 20px;
+
 }
 
 .courses {
@@ -69,10 +70,14 @@
    }
 }
 
+/* Popular Courses Section */
+
 
 .popular-course-container {
    width: 100%;
    margin: 20vh auto;
+   padding: 10vh 0;
+   background: linear-gradient(0deg, #684cb4, transparent);
 }
 
 .popular-course-area {
@@ -84,36 +89,39 @@
 
 .popular-text {
    text-align: center;
-   width: 50%;
+   width: 90%;
 }
 
 .popular-text h2 {
-   font-size: 2.5rem;
+   font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .popular-text p {
-   font-size: 1.3rem;
+   font-size: clamp(1.3rem, 3vw, 1.8rem);
+
 }
 
 .course-card-area {
    margin-top: 8vh;
-
    display: flex;
+   align-items: center;
    justify-content: center;
    width: 90%;
 }
 
 .course-card {
+   max-width: 100%;
    margin: 0 10px;
    padding: 15px 15px;
-   background: #d4d4d4;
+   background: #f3f3f3;
    border-radius: 10px;
-   height: 450px;
+   /* height: 450px; */
    transition: 0.5s ease;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .course-card:hover .card-image img {
-   transform: scale(1.2);
+   transform: scale(1.15);
 }
 
 .card-image {
@@ -130,4 +138,38 @@
    transition: 0.5s ease;
 }
 
-.card-content {}
+.card-content {
+   padding: 20px 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   height: 100%;
+}
+
+
+.card-content h3 {
+   width: 90%;
+   text-align: center;
+   margin-bottom: 2vh;
+}
+
+
+@media screen and (max-width: 768px) {
+   .course-card-area {
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   .popular-text {
+      width: 90%;
+   }
+
+   .course-container {
+      margin: 0;
+   }
+
+   .popular-course-container {
+      margin: 0;
+   }
+}

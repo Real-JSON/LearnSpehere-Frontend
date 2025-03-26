@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/Course.css';
 import courseimg from '../assets/freepik__background__78432.png';
 
-import courseImg1 from '../assets/ai-technology-microchip-background-digital-transformation-concept.jpg'
-import courseImg2 from '../assets/network-people-digital-world.jpg'
-import courseImg3 from '../assets/person-front-computer-working-html.jpg'
+import courseImg1 from '../assets/card-images/ai.jpg';
+import courseImg2 from '../assets/card-images/network.jpeg';
+import courseImg3 from '../assets/card-images/freepik__upload__16890.jpeg';
 
 const Course = () => {
    return (
@@ -90,21 +90,58 @@ const Course = () => {
                         <img src={courseImg1} alt="" />
                      </div>
                      <div className="card-content">
-                        <h3>Artificial Intelligence & Machine Learning</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, earum!
+                        <h3>
+                           Artificial Intelligence & Machine Learning
+                        </h3>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetur
+                           adipisicing elit. Sunt, earum! Lorem ipsum
+                           dolor sit amet consectetur adipisicing elit.
+                           Tempora perspiciatis itaque omnis ratione
+                           eum, asperiores aspernatur harum. Alias
+                           facere qui officia voluptatum, deleniti
+                           veniam labore unde, libero minima accusamus
+                           suscipit!
+                        </p>
                      </div>
                   </div>
                   <div className="course-card">
                      <div className="card-image">
                         <img src={courseImg2} alt="" />
                      </div>
-                     <div className="card-content"></div>
+                     <div className="card-content">
+                        <h3>
+                           Artificial Intelligence & Machine Learning
+                        </h3>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetur
+                           adipisicing elit. Sunt, earum! Lorem ipsum
+                           dolor sit amet consectetur adipisicing elit.
+                           Tempora perspiciatis itaque omnis ratione
+                           eum, asperiores aspernatur harum. Alias
+                           facere qui officia voluptatum, deleniti
+                           veniam labore unde, libero minima accusamus
+                           suscipit!
+                        </p>
+                     </div>
                   </div>
                   <div className="course-card">
                      <div className="card-image">
                         <img src={courseImg3} alt="" />
                      </div>
-                     <div className="card-content"></div>
+                     <div className="card-content">
+                        <h3>Cloud Computing & Infastructure</h3>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetur
+                           adipisicing elit. Sunt, earum! Lorem ipsum
+                           dolor sit amet consectetur adipisicing elit.
+                           Tempora perspiciatis itaque omnis ratione
+                           eum, asperiores aspernatur harum. Alias
+                           facere qui officia voluptatum, deleniti
+                           veniam labore unde, libero minima accusamus
+                           suscipit!
+                        </p>
+                     </div>
                   </div>
                </div>
             </section>
