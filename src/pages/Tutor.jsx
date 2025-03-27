@@ -11,8 +11,8 @@ const Tutor = () => {
                         <div className="tutor-content">
                             <div className="info-text">
                                 <h3>
-                                    if you are a certified teacher then become
-                                    an instructor
+                                    if you are a certified teacher then{' '}
+                                    <span>become an instructor</span>
                                 </h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur

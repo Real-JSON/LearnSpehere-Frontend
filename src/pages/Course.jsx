@@ -7,147 +7,149 @@ import courseImg2 from '../assets/card-images/network.jpeg';
 import courseImg3 from '../assets/card-images/freepik__upload__16890.jpeg';
 
 const Course = () => {
-   return (
-      <>
-         <div className="course-container">
-            <section className="courses">
-               <div className="course-image">
-                  <img src={courseimg} alt="" />
-               </div>
-               <div className="course-heading">
-                  <h2>Benefits From Our Online Learning</h2>
-                  <div className="course-content">
-                     <div className="course">
-                        <div className="course-icon">
-                           <i class="ri-graduation-cap-fill"></i>
+    return (
+        <>
+            <div className="course-container">
+                <section className="courses">
+                    <div className="course-image">
+                        <img src={courseimg} alt="" />
+                    </div>
+                    <div className="course-heading">
+                        <h2>Benefits From Our Online Learning</h2>
+                        <div className="course-content">
+                            <div className="course">
+                                <div className="course-icon">
+                                    <i class="ri-graduation-cap-fill"></i>
+                                </div>
+                                <div className="course-name">
+                                    <h3>Online Degrees</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dignissimos,
+                                        aspernatur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="course">
+                                <div className="course-icon">
+                                    <i class="ri-book-open-fill"></i>
+                                </div>
+                                <div className="course-name">
+                                    <h3>Online Degrees</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dignissimos,
+                                        aspernatur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="course">
+                                <div className="course-icon">
+                                    <i class="ri-play-large-fill"></i>
+                                </div>
+                                <div className="course-name">
+                                    <h3>Online Degrees</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dignissimos,
+                                        aspernatur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="course">
+                                <div className="course-icon">
+                                    <i class="ri-group-fill"></i>
+                                </div>
+                                <div className="course-name">
+                                    <h3>Online Degrees</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dignissimos,
+                                        aspernatur.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="course-name">
-                           <h3>Online Degrees</h3>
-                           <p>
-                              Lorem ipsum dolor sit amet consectetur
-                              adipisicing elit. Dignissimos,
-                              aspernatur.
-                           </p>
-                        </div>
-                     </div>
-                     <div className="course">
-                        <div className="course-icon">
-                           <i class="ri-book-open-fill"></i>
-                        </div>
-                        <div className="course-name">
-                           <h3>Online Degrees</h3>
-                           <p>
-                              Lorem ipsum dolor sit amet consectetur
-                              adipisicing elit. Dignissimos,
-                              aspernatur.
-                           </p>
-                        </div>
-                     </div>
-                     <div className="course">
-                        <div className="course-icon">
-                           <i class="ri-play-large-fill"></i>
-                        </div>
-                        <div className="course-name">
-                           <h3>Online Degrees</h3>
-                           <p>
-                              Lorem ipsum dolor sit amet consectetur
-                              adipisicing elit. Dignissimos,
-                              aspernatur.
-                           </p>
-                        </div>
-                     </div>
-                     <div className="course">
-                        <div className="course-icon">
-                           <i class="ri-group-fill"></i>
-                        </div>
-                        <div className="course-name">
-                           <h3>Online Degrees</h3>
-                           <p>
-                              Lorem ipsum dolor sit amet consectetur
-                              adipisicing elit. Dignissimos,
-                              aspernatur.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </div>
-         <div className="popular-course-container">
-            <section className="popular-course-area">
-               <div className="popular-text">
-                  <h2>Our Popular Courses</h2>
-                  <p>
-                     Discove our most sought-after courses, carefully
-                     curated to meet the demands of today's learners.
-                     Dive into engaing content crafted for success in
-                     every step of your educational journey.
-                  </p>
-               </div>
-               <div className="course-card-area">
-                  <div className="course-card">
-                     <div className="card-image">
-                        <img src={courseImg1} alt="" />
-                     </div>
-                     <div className="card-content">
-                        <h3>
-                           Artificial Intelligence & Machine Learning
-                        </h3>
+                    </div>
+                </section>
+            </div>
+            <div className="popular-course-container">
+                <section className="popular-course-area">
+                    <div className="popular-text">
+                        <h2>Our Popular Courses</h2>
                         <p>
-                           Lorem ipsum dolor sit amet, consectetur
-                           adipisicing elit. Sunt, earum! Lorem ipsum
-                           dolor sit amet consectetur adipisicing elit.
-                           Tempora perspiciatis itaque omnis ratione
-                           eum, asperiores aspernatur harum. Alias
-                           facere qui officia voluptatum, deleniti
-                           veniam labore unde, libero minima accusamus
-                           suscipit!
+                            Discove our most sought-after courses, carefully
+                            curated to meet the demands of today's learners.
+                            Dive into engaing content crafted for success in
+                            every step of your educational journey.
                         </p>
-                     </div>
-                  </div>
-                  <div className="course-card">
-                     <div className="card-image">
-                        <img src={courseImg2} alt="" />
-                     </div>
-                     <div className="card-content">
-                        <h3>
-                           Artificial Intelligence & Machine Learning
-                        </h3>
-                        <p>
-                           Lorem ipsum dolor sit amet, consectetur
-                           adipisicing elit. Sunt, earum! Lorem ipsum
-                           dolor sit amet consectetur adipisicing elit.
-                           Tempora perspiciatis itaque omnis ratione
-                           eum, asperiores aspernatur harum. Alias
-                           facere qui officia voluptatum, deleniti
-                           veniam labore unde, libero minima accusamus
-                           suscipit!
-                        </p>
-                     </div>
-                  </div>
-                  <div className="course-card">
-                     <div className="card-image">
-                        <img src={courseImg3} alt="" />
-                     </div>
-                     <div className="card-content">
-                        <h3>Cloud Computing & Infastructure</h3>
-                        <p>
-                           Lorem ipsum dolor sit amet, consectetur
-                           adipisicing elit. Sunt, earum! Lorem ipsum
-                           dolor sit amet consectetur adipisicing elit.
-                           Tempora perspiciatis itaque omnis ratione
-                           eum, asperiores aspernatur harum. Alias
-                           facere qui officia voluptatum, deleniti
-                           veniam labore unde, libero minima accusamus
-                           suscipit!
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </div>
-      </>
-   );
+                    </div>
+                    <div className="course-card-area">
+                        <div className="course-card">
+                            <div className="card-image">
+                                <img src={courseImg1} alt="" />
+                            </div>
+                            <div className="card-content">
+                                <h3>
+                                    Artificial Intelligence & Machine Learning
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Sunt, earum! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Tempora perspiciatis itaque omnis ratione
+                                    eum, asperiores aspernatur harum. Alias
+                                    facere qui officia voluptatum, deleniti
+                                    veniam labore unde, libero minima accusamus
+                                    suscipit!
+                                </p>
+                            </div>
+                        </div>
+                        <div className="course-card">
+                            <div className="card-image">
+                                <img src={courseImg2} alt="" />
+                            </div>
+                            <div className="card-content">
+                                <h3>
+                                    Artificial Intelligence & Machine Learning
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Sunt, earum! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Tempora perspiciatis itaque omnis ratione
+                                    eum, asperiores aspernatur harum. Alias
+                                    facere qui officia voluptatum, deleniti
+                                    veniam labore unde, libero minima accusamus
+                                    suscipit!
+                                </p>
+                            </div>
+                        </div>
+                        <div className="course-card">
+                            <div className="card-image">
+                                <img src={courseImg3} alt="" />
+                            </div>
+                            <div className="card-content">
+                                <h3>
+                                    Cloud Computing & Infastructure Architecture
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Sunt, earum! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Tempora perspiciatis itaque omnis ratione
+                                    eum, asperiores aspernatur harum. Alias
+                                    facere qui officia voluptatum, deleniti
+                                    veniam labore unde, libero minima accusamus
+                                    suscipit!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </>
+    );
 };
 
 export default Course;

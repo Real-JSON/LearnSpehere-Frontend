@@ -26,8 +26,14 @@
 .info-text h3 {
     width: 100%;
     text-transform: capitalize;
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    font-size: clamp(1.5rem, 2.3vw, 3rem);
     margin-bottom: 2vh;
+}
+
+.info-text h3 span {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .info-text p {
@@ -36,7 +42,22 @@
 
 .tutor-benefits h3 {
     margin: 4vh 0px;
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    font-size: clamp(1.5rem, 2.3vw, 3rem);
+}
+
+.tutor-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw;
+    padding: 0 20px;
+}
+
+.tutor-li li {
+    padding: 5px 0;
+    width: 90%;
+    font-size: clamp(1.2rem, 1.2vw, 3rem);
+    list-style: disc;
 }
 
 .tutor-image {
@@ -67,21 +88,6 @@
 
 #become-an-instructor:hover {
     transform: scale(1.1);
-}
-
-.tutor-li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10vw;
-    padding: 0 20px;
-}
-
-.tutor-li li {
-    padding: 5px 0;
-    width: 90%;
-    font-size: clamp(1.3rem, 1.2vw, 3rem);
-    list-style: disc;
 }
 
 @media screen and (max-width: 768px) {
