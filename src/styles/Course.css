@@ -148,13 +148,11 @@
    height: 100%;
 }
 
-
 .card-content h3 {
    width: 90%;
    text-align: center;
    margin-bottom: 2vh;
 }
-
 
 @media screen and (max-width: 768px) {
    .course-card-area {
