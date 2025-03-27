@@ -106,7 +106,7 @@
 }
 
 .front-banner-text h3 {
-   font-size: 4rem;
+   font-size: clamp(1.5rem, 4vw, 3rem);
    margin-bottom: 4vh;
    color: #ffff00;
 }
@@ -117,7 +117,7 @@
 
 .front-banner-text p {
    max-width: 90%;
-   font-size: 1.8rem;
+   font-size: clamp(1.3rem, 1.2vw, 1.8rem);
    margin-bottom: 12vh;
    color: #fff;
 }
