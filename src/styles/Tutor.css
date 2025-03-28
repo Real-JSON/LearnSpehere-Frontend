@@ -77,8 +77,8 @@
 }
 
 #become-an-instructor {
-    background: #fff000;
-    padding: 20px 40px;
+    background: var(--main-color);
+    padding: 15px 30px;
     border-radius: 50px;
     transition: 0.3s ease;
     font-size: 1.3rem;
@@ -115,5 +115,9 @@
 
     .tutor-btn {
         justify-content: center;
+    }
+
+    .tutor-image {
+        margin: 0;
     }
 }

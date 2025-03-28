@@ -35,7 +35,7 @@ const Course = () => {
                                     <i class="ri-book-open-fill"></i>
                                 </div>
                                 <div className="course-name">
-                                    <h3>Online Degrees</h3>
+                                    <h3>20+ Lessons</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Dignissimos,
@@ -48,7 +48,7 @@ const Course = () => {
                                     <i class="ri-play-large-fill"></i>
                                 </div>
                                 <div className="course-name">
-                                    <h3>Online Degrees</h3>
+                                    <h3>Lifetime Access</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Dignissimos,
@@ -61,7 +61,7 @@ const Course = () => {
                                     <i class="ri-group-fill"></i>
                                 </div>
                                 <div className="course-name">
-                                    <h3>Online Degrees</h3>
+                                    <h3>Community Support</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Dignissimos,

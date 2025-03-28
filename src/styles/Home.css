@@ -1,152 +1,152 @@
 .header-wrapper {
-   position: relative;
-   top: 0;
-   left: 0;
-   right: 0;
-   z-index: 999;
-   display: flex;
-   justify-content: space-around;
-   margin-top: 1rem;
-   height: 100%;
-   padding: 0px 1vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    height: 100%;
+    padding: 0px 1vw;
 }
 
 .header-logo,
 .header-logo-two {
-   display: flex;
+    display: flex;
 }
 
 .header-logo img {
-   width: 120px;
-   max-width: 100%;
-   height: auto;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
 }
 
 .header-logo-two img {
-   width: 90px;
-   max-width: 100%;
-   height: auto;
+    width: 90px;
+    max-width: 100%;
+    height: auto;
 }
 
 .heading-text {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .nav-links {
-   position: relative;
-   z-index: 999;
-   left: 0;
-   right: 0;
-   display: none;
-   justify-content: space-around;
-   margin-top: 2rem;
-   border-radius: 50px;
-   background: #f3f3f3;
-   padding: 10px 0px;
-   margin-left: 1rem;
-   margin-right: 1rem;
+    position: relative;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: space-around;
+    margin-top: 2rem;
+    border-radius: 50px;
+    background: #f3f3f3;
+    padding: 10px 0px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .nav-links ul {
-   width: 100%;
+    width: 100%;
 }
 
 .nav-links li {
-
-   border-radius: 50px;
-   transition: 0.3s ease;
+    border-radius: 50px;
+    transition: 0.3s ease;
 }
 
 .nav-links a {
-   text-align: center;
-   padding: 5px 20px;
-   font-size: 1.2rem;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 1.2rem;
 }
 
 .nav-links li:hover {
-   background: #cecece;
+    background: #cecece;
 }
 
 .hideOnMobile {
-   display: block;
+    display: block;
 }
 
 /* ===front-banner=== */
 
 .front-main-banner-picture {
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   z-index: 0;
-   width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
 }
 
 .front-main-banner-picture img {
-   width: 100%;
-   height: 100vh;
-   filter: brightness(0.6);
-   object-fit: cover;
-   object-position: center;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(0.6);
+    object-fit: cover;
+    object-position: center;
 }
 
 .front-banner-text {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   padding: 5vh 5vw;
-   margin-top: 5vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 5vw;
+    margin-top: 5vh;
 }
 
 .front-banner-text h3 {
-   font-size: clamp(1.5rem, 4vw, 3rem);
-   margin-bottom: 4vh;
-   color: #ffff00;
+    font-size: clamp(1.5rem, 4vw, 7rem);
+    margin-bottom: 4vh;
+    color: #ffff00;
 }
 
 #banner-text-span {
-   color: #f3f3f3;
+    color: #f3f3f3;
 }
 
 .front-banner-text p {
-   max-width: 90%;
-   font-size: clamp(1.3rem, 1.2vw, 1.8rem);
-   margin-bottom: 12vh;
-   color: #fff;
+    max-width: 60%;
+    font-size: clamp(1.5rem, 1.8vw, 3rem);
+    margin-bottom: 12vh;
+    color: #fff;
 }
 
 #reserve-your-seat {
-   display: flex;
-   gap: 5px;
-   background-color: #ffff00;
-   padding: 10px 20px;
-   border-radius: 50px;
-   text-transform: uppercase;
-   font-weight: 500;
-   transition: 0.4s ease;
+    display: flex;
+    gap: 5px;
+    background-color: #ffff00;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: clamp(1.3rem, 1.5vw, 3rem);
+    transition: 0.4s ease;
 }
 
 #reserve-your-seat:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #schedule-btn {
-   height: 9vh;
-   background: #ffff00;
-   padding: 0 1.5vw;
-   border-radius: 50px;
-   max-width: 100%;
+    height: 9vh;
+    background: #ffff00;
+    padding: 0 1.5vw;
+    border-radius: 50px;
+    max-width: 100%;
 }
 
 #schedule-btn a {
-   text-transform: uppercase;
-   font-weight: 500;
-   font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
 }

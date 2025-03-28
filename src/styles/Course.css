@@ -49,10 +49,10 @@
 }
 
 .course-icon i {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    background: #00a2ff;
-    padding: 6px 6px;
+    background: var(--main-color);
+    padding: 6px 10px;
     border-radius: 50px;
     font-size: 32px;
 }
@@ -75,7 +75,7 @@
     width: 100%;
     margin: 20vh auto;
     padding: 10vh 0;
-    background: linear-gradient(0deg, #684cb4, transparent);
+    /* background: linear-gradient(0deg, var(--main-color), transparent); */
 }
 
 .popular-course-area {
@@ -100,7 +100,7 @@
 }
 
 .course-card-area {
-    margin-top: 8vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +111,7 @@
     max-width: 100%;
     margin: 0 10px;
     padding: 8px 8px;
-    background: #f3f3f3;
+    background: #fbfbfb;
     border-radius: 24px;
     /* height: 450px; */
     transition: 0.5s ease;
@@ -120,6 +120,7 @@
 
 .course-card:hover .card-image img {
     transform: scale(1.15);
+    filter: brightness(1);
 }
 
 .card-image {
@@ -130,6 +131,7 @@
 }
 
 .card-image img {
+    filter: brightness(0.7);
     width: 100%;
     height: auto;
     display: block;
