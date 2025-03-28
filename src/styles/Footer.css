@@ -48,6 +48,12 @@ h2 {
 
 .box a {
     color: #fcfcfc;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.box a:hover {
+    color: #b35043;
+    transform: scale(1.1);
 }
 
 .footer-bottom {
