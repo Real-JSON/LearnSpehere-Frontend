@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -13,6 +13,9 @@
     -moz-osx-font-smoothing: grayscale;
 
     --main-color: #ff725e;
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-clr: #29fd53;
 }
 
 * {
