@@ -8,7 +8,10 @@ const Footer = () => {
         <>
             <footer className="footer">
                 <div className="footer-left">
-                    <img src="" alt="" />
+                    <a href="#home" className="footer-logo">
+                        <i className="ri-donut-chart-fill"></i>
+                        <span>LearnSphere</span>
+                    </a>
                     <p>
                         dolor sit amet consectetur adipisicing elit. Illum,
                         aut?dolor sit amet consectetur adipisicing elit. Vitae,

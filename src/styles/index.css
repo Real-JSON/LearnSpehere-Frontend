@@ -12,10 +12,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --main-color: #ff725e;
+    --main-color: #ff6b5e;
     --bg-color: #222327;
     --text-color: #fff;
     --main-clr: #29fd53;
+
+    --cta-btns: #ff6b5e;
+    --nav-items: #212529;
+    --nav-bg: #ffffff;
+
+    --muted-green: #3d5a3a;
+    --warm-biege: #f8e3c3;
+    --deep-teal: #2b6777;
 }
 
 * {
