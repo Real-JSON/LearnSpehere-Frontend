@@ -1,13 +1,12 @@
 import React from 'react';
-import ControlledCarousel from '../components/ControlledCarousel';
 import '../styles/Home.css';
-import logo from '../assets/logo/ucsc.png';
-import uniLogo from '../assets/logo/logo.png';
 import homeImg from '../assets/3837.jpg';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
     return (
         <>
+            <Navbar />
             <section>
                 <div className="front-main-banner">
                     <picture className="front-main-banner-picture">

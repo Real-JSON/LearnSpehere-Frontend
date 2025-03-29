@@ -8,7 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: #fff;
-    padding: 28px 12%;
+    padding: 28px 6%;
     transition: all 0.5s ease;
 }
 
@@ -103,7 +103,7 @@ header {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 29vh;
+        height: 35vh;
         background: var(--main-clr);
         display: flex;
         flex-direction: column;
@@ -123,9 +123,10 @@ header {
         transform: translateY(5px);
     }
     .navbar a.active {
+        color: #fff;
     }
 
     .navbar.open {
-        right: 2%;
+        right: 0%;
     }
 }

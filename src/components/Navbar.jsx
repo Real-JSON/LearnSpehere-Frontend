@@ -1,43 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
-    let menu = document.querySelector('#menu-icon');
-    let navbar = document.querySelector('.navbar');
+    // State to track whether the menu is open
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    menu.onclick = () => {
-        menu.classList.toggle('bx-x');
-        navbar.classList.toggle('open');
+    // Function to toggle the menu
+    const showNavbar = () => {
+        setIsMenuOpen(!isMenuOpen); // Toggle the state
     };
+
     return (
         <>
             <header>
-                <a href="" className="logo">
-                    <i class="ri-donut-chart-fill"></i>
+                <a href="#home" className="logo">
+                    <i className="ri-donut-chart-fill"></i>
                     <span>LearnSphere</span>
                 </a>
-                <ul className="navbar">
+                {/* Add the 'open' class dynamically based on state */}
+                <ul className={`navbar ${isMenuOpen ? 'open' : ''}`}>
                     <li>
-                        <a href="" className="active">
+                        <a href="#home" className="active">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="">Community</a>
+                        <a href="#community">Community</a>
                     </li>
                     <li>
-                        <a href="">Become a Tutor</a>
+                        <a href="#tutor">Become a Tutor</a>
                     </li>
                 </ul>
                 <div className="main">
-                    <a href="" className="user">
-                        <i class="ri-user-line"></i>Sign In
+                    <a href="#signin" className="user">
+                        <i className="ri-user-line"></i>Sign In
                     </a>
-                    <a href="">Register</a>
-                    <div className="bx bx-menu" id="menu-icon"></div>
+                    <a href="#register">Register</a>
+                    {/* Add an onClick handler to toggle the menu */}
+                    <div
+                        className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`}
+                        id="menu-icon"
+                        onClick={showNavbar}
+                    ></div>
                 </div>
             </header>
         </>
