@@ -28,7 +28,7 @@
 }
 
 .front-banner-text h3 {
-    font-size: clamp(1.5rem, 5vw, 7rem);
+    font-size: clamp(1.8rem, 5vw, 7rem);
     margin-bottom: 4vh;
     color: var(--main-color);
 }

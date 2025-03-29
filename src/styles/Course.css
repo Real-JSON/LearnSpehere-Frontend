@@ -67,6 +67,13 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .course-heading h2 {
+        width: 100%;
+    }
+    .course-container {
+        margin: 12vh auto;
+    }
 }
 
 /* Popular Courses Section */
