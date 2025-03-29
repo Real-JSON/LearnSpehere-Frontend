@@ -33,10 +33,12 @@
 .info-text h3 span {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .info-text p {
+    text-align: justify;
     font-size: clamp(1.3rem, 1.2vw, 1.8rem);
 }
 
@@ -114,5 +116,11 @@
 
     .tutor-image {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tutor-li {
+        gap: 24vw;
     }
 }
