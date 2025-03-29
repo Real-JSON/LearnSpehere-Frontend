@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header>
+            <header id="home">
                 <a href="#home" className="logo">
                     <i className="ri-donut-chart-fill"></i>
                     <span>LearnSphere</span>
@@ -28,10 +28,13 @@ const Navbar = () => {
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#community">Community</a>
+                        <a href="#courses">Courses</a>
                     </li>
                     <li>
                         <a href="#tutor">Become a Tutor</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
                     </li>
                 </ul>
                 <div className="main">

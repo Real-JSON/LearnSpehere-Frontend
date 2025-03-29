@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 const Footer = () => {
     return (
         <>
-            <footer className="footer">
+            <footer className="footer" id="contact">
                 <div className="footer-left">
                     <a href="#home" className="footer-logo">
                         <i className="ri-donut-chart-fill"></i>

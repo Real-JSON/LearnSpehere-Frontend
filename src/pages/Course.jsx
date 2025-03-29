@@ -9,7 +9,7 @@ import courseImg3 from '../assets/card-images/freepik__upload__16890.jpeg';
 const Course = () => {
     return (
         <>
-            <div className="course-container">
+            <div className="course-container" id="courses">
                 <section className="courses">
                     <div className="course-image">
                         <img src={courseimg} alt="" />

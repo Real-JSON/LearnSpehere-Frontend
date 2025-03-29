@@ -5,7 +5,7 @@ import '../styles/Tutor.css';
 const Tutor = () => {
     return (
         <>
-            <div className="tutor-container">
+            <div className="tutor-container" id="tutor">
                 <section>
                     <div className="tutor-area">
                         <div className="tutor-content">
