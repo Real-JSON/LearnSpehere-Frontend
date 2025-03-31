@@ -51,6 +51,7 @@ const SignIn = () => {
                     </div>
                 </section>
             </div>
+            <p id="footer-text">All rights reserved &copy; 2025</p>
         </>
     );
 };
