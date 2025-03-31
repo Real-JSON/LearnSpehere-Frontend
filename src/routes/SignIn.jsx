@@ -4,8 +4,8 @@ import '../styles/SignIn.css';
 const SignIn = () => {
     return (
         <>
-            <div className="signin-form">
-                <section>
+            <div className="signin-container">
+                <section className="signin-form">
                     <div className="signin-content">
                         <div className="site-logo">
                             <i className="ri-donut-chart-fill"></i>
@@ -14,20 +14,20 @@ const SignIn = () => {
                         <div className="signin-text">
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Mollitia, aliquam! Tempora
-                                veniam commodi excepturi. Numquam recusandae ad
+                                adipisicing elit.
                             </p>
                         </div>
                     </div>
                     <div className="signin-field">
                         <div className="form">
                             <form action="POST">
+                                <h2>Welcome Back!</h2>
                                 <div className="form-group">
                                     <input
                                         type="email"
                                         id="email"
                                         name="email"
-                                        placeholder="Email address"
+                                        placeholder="Email address "
                                         required
                                     />
                                 </div>
@@ -51,7 +51,10 @@ const SignIn = () => {
                     </div>
                 </section>
             </div>
-            <p id="footer-text">All rights reserved &copy; 2025</p>
+            <p id="footer-text">
+                All rights reserved &copy; 2025 • &nbsp;
+                <i className="ri-donut-chart-fill"></i> &nbsp;LearnSpehere
+            </p>
         </>
     );
 };

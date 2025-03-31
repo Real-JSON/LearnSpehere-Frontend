@@ -1,5 +1,6 @@
 .signin-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 3vh 5vw;
 }
@@ -28,7 +29,7 @@
 }
 
 .signin-text {
-    text-align: justify;
+    text-align: center;
     padding: 3vh 3vw;
 }
 
@@ -45,11 +46,18 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     padding: 2vh 3vw;
-    height: 330px;
+    height: 370px;
 }
 
 form {
     width: 100%;
+}
+
+.form h2 {
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .form-group input {
@@ -69,6 +77,9 @@ form {
 
 .singin-btn a {
     background: var(--main-color);
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
     padding: 10px 20px;
     border-radius: 50px;
 }
@@ -77,4 +88,7 @@ form {
     display: flex;
     justify-content: center;
     margin-top: 10vh;
+}
+
+@media screen and (min-width: 768px) {
 }
