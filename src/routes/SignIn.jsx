@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/SignIn.css';
 
 const SignIn = () => {
     return (
@@ -15,8 +16,6 @@ const SignIn = () => {
                                 Lorem ipsum, dolor sit amet consectetur
                                 adipisicing elit. Mollitia, aliquam! Tempora
                                 veniam commodi excepturi. Numquam recusandae ad
-                                velit nobis natus totam dicta iusto possimus
-                                quaerat ex? Minus eveniet autem cupiditate.
                             </p>
                         </div>
                     </div>
@@ -24,30 +23,30 @@ const SignIn = () => {
                         <div className="form">
                             <form action="POST">
                                 <div className="form-group">
-                                    <label htmlFor="email">Email Address</label>
                                     <input
                                         type="email"
                                         id="email"
                                         name="email"
-                                        placeholder="Enter your email"
+                                        placeholder="Email address"
                                         required
                                     />
                                 </div>
+                                <br />
                                 <div className="form-group">
-                                    <label htmlFor="password">Password</label>
                                     <input
                                         type="password"
                                         id="password"
                                         name="password"
-                                        placeholder="Enter your password"
+                                        placeholder="Password"
                                         required
                                     />
                                 </div>
+                                <br />
                                 <div className="singin-btn">
                                     <a href="">Sign In</a>
                                 </div>
                             </form>
-                            <a href="">forget password?</a>
+                            <a href="">Forget password?</a>
                         </div>
                     </div>
                 </section>
