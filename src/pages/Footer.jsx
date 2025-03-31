@@ -90,7 +90,7 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>All rights reserved &copy; 2025</p>
                     <p id="developed-by">
-                        Developed by <span>Januda</span>
+                        Developed by <span>Januda Amaneth</span>
                     </p>
                 </div>
             </footer>

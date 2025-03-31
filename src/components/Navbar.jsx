@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -20,9 +22,9 @@ const Navbar = () => {
                 {/* Add the 'open' class dynamically based on state */}
                 <ul className={`navbar ${isMenuOpen ? 'open' : ''}`}>
                     <li>
-                        <a href="#home" className="active">
+                        <Link to="/" className="active">
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -38,10 +40,10 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="main">
-                    <a href="#signin" className="user">
+                    <Link to="/signin" className="user">
                         <i className="ri-user-line"></i>Sign In
-                    </a>
-                    <a href="#register">Register</a>
+                    </Link>
+                    <Link to="/register">Register</Link>
                     {/* Add an onClick handler to toggle the menu */}
                     <div
                         className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`}
