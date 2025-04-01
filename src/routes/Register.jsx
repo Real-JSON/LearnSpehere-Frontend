@@ -88,7 +88,7 @@ const Register = () => {
                                 </div>
                             </div>
                         </div>
-                        <p id="footer-text">
+                        <p id="footer-txt">
                             All rights reserved &copy; 2025 • &nbsp;
                             <i className="ri-donut-chart-fill"></i>{' '}
                             &nbsp;LearnSpehere

@@ -31,10 +31,11 @@
 }
 
 .info-text h3 span {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    -webkit-background-clip: text;
+    color: var(--main-color);
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+    /* -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 .info-text p {
