@@ -11,7 +11,7 @@ const SignIn = () => {
                             <i className="ri-donut-chart-fill"></i>
                             <span>LearnSphere</span>
                         </div>
-                        <div className="signin-text">
+                        <div className="site-text">
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
                                 adipisicing elit.

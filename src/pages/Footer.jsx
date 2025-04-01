@@ -88,7 +88,8 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footer-bottom">
-                    <p>All rights reserved &copy; 2025</p>
+                    All rights reserved &copy; 2025 • &nbsp;
+                    <i className="ri-donut-chart-fill"></i> &nbsp;LearnSpehere
                     <p id="developed-by">
                         Developed by <span>Januda Amaneth</span>
                     </p>

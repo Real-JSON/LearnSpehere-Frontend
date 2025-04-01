@@ -6,6 +6,7 @@ import SignIn from './routes/SignIn.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './pages/About.jsx';
+import Register from './routes/Register.jsx';
 
 const router = createBrowserRouter([
     {
@@ -17,13 +18,9 @@ const router = createBrowserRouter([
         element: <SignIn />,
     },
     {
-        path: '/about',
-        element: <About />,
+        path: '/register',
+        element: <Register />,
     },
-    // {
-    //     path: '*',
-    //     element: <App />,
-    // },
 ]);
 
 createRoot(document.getElementById('root')).render(

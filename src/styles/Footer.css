@@ -1,7 +1,7 @@
 footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    padding: 25px 30px 15px 25px;
     background-color: var(--main-color);
     margin-top: 10vh;
 }
@@ -67,7 +67,7 @@ h2 {
     text-transform: capitalize;
     text-align: center;
     color: #fcfcfc;
-    padding-top: 50px;
+    padding-top: 15vh;
 }
 
 .footer-left p {

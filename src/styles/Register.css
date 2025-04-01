@@ -1,0 +1,41 @@
+.register-container {
+    height: 85vh;
+}
+
+.register-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header {
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.form-header h2 {
+    font-size: 1.4rem;
+}
+
+.grid {
+    display: flex;
+    gap: 10px;
+}
+
+.register-form {
+    padding: 3vh 4vw;
+}
+
+.reg-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 3vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#footer-text {
+    margin-top: 0;
+}
