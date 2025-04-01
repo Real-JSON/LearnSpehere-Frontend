@@ -69,19 +69,27 @@ form {
     color: #111111;
 }
 
-.singin-btn {
+.submit-btn {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.singin-btn a {
+.submit-btn button {
     background: var(--main-color);
+    color: #000;
     text-align: center;
     width: 100%;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 50px;
+    transition: all 0.4s ease;
+}
+
+.submit-btn button:hover {
+    cursor: pointer;
+    background-color: #e4594d;
 }
 
 #footer-text {

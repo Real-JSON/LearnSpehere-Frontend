@@ -43,8 +43,8 @@ const SignIn = () => {
                                     />
                                 </div>
                                 <br />
-                                <div className="singin-btn">
-                                    <a href="">Sign In</a>
+                                <div className="submit-btn">
+                                    <button>Sign In</button>
                                 </div>
                             </form>
                             <a href="">Forget password?</a>

@@ -81,8 +81,8 @@ const Register = () => {
                                         </div>
 
                                         <br />
-                                        <div className="singin-btn">
-                                            <a href="">Create account</a>
+                                        <div className="submit-btn">
+                                            <button>Create account</button>
                                         </div>
                                     </form>
                                 </div>
