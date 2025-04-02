@@ -28,7 +28,8 @@
 }
 
 .front-banner-text h3 {
-    font-size: clamp(1.8rem, 5vw, 7rem);
+    width: 110%;
+    font-size: clamp(2rem, 5vw, 7rem);
     margin-bottom: 4vh;
     color: var(--main-color);
 }
@@ -76,7 +77,7 @@
 
 @media screen and (max-width: 768px) {
     .front-banner-text p {
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 
