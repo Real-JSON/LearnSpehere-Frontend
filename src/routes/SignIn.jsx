@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/SignIn.css';
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+    });
     return (
         <>
             <div className="signin-container">

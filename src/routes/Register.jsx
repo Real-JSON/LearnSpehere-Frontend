@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import '../styles/Register.css';
 
 const Register = () => {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.post(
+                'http://localhost:4000/auth/register',
+                formData
+            );
+            console.log(response.data);
+            alert('Account created successfully!');
+        } catch (error) {
+            console.error(
+                'Error submitting form: ',
+                error.response?.data || error.message
+            );
+            alert('Account not created successfully!');
+        }
+    };
     return (
         <>
             <div className="register-form-container">
@@ -22,7 +52,11 @@ const Register = () => {
                             </div>
                             <div className="register-form">
                                 <div className="reg-form">
-                                    <form action="" method="post">
+                                    <form
+                                        action=""
+                                        method="post"
+                                        onSubmit={handleSubmit}
+                                    >
                                         <div className="form-header">
                                             <h2>Create your account</h2>
                                             <p>
@@ -40,6 +74,7 @@ const Register = () => {
                                                     id="firstName"
                                                     name="firstName"
                                                     required
+                                                    onChange={handleChange}
                                                 />
                                             </div>
                                             <br />
@@ -52,6 +87,7 @@ const Register = () => {
                                                     id="lastName"
                                                     name="lastName"
                                                     required
+                                                    onChange={handleChange}
                                                 />
                                             </div>
                                         </div>
@@ -65,6 +101,7 @@ const Register = () => {
                                                 id="email"
                                                 name="email"
                                                 required
+                                                onChange={handleChange}
                                             />
                                         </div>
                                         <br />
@@ -77,12 +114,15 @@ const Register = () => {
                                                 id="password"
                                                 name="password"
                                                 required
+                                                onChange={handleChange}
                                             />
                                         </div>
 
                                         <br />
                                         <div className="submit-btn">
-                                            <button>Create account</button>
+                                            <button type="submit">
+                                                Create account
+                                            </button>
                                         </div>
                                     </form>
                                 </div>
