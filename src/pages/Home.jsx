@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
+import { Link } from 'react-router-dom';
 import homeImg from '../assets/freepik__upload__60907.jpeg';
 import Navbar from '../components/Navbar';
 
@@ -25,14 +26,14 @@ const Home = () => {
                             right at your fingertips. Learn, grow, and succeed
                             with ease!"
                         </p>
-                        <a
-                            href=""
-                            id="reserve-your-seat"
-                            aria-label="reserve your seat"
-                        >
-                            reserve your seat
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
+
+                        <button id="reserve-your-seat">
+                            <Link to="/register">
+                                {' '}
+                                reserve your seat{' '}
+                                <i class="ri-arrow-right-up-line"></i>
+                            </Link>
+                        </button>
                     </div>
                 </div>
             </section>
