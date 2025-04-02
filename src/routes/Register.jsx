@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Register.css';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'; // Import SweetAlert2
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -26,15 +27,27 @@ const Register = () => {
                 formData
             );
             console.log(response.data);
-            alert('Account created successfully!');
-
-            navigate('/'); // Redirect to the home page
+            // Use SweetAlert for success message
+            Swal.fire({
+                title: 'Success!',
+                text: 'Account created successfully!',
+                icon: 'success',
+                confirmButtonText: 'OK',
+            }).then(() => {
+                navigate('/'); // Redirect to the home page after closing the alert
+            });
         } catch (error) {
             console.error(
                 'Error submitting form: ',
                 error.response?.data || error.message
             );
-            alert('Account not created successfully!');
+            // Use SweetAlert for error message
+            Swal.fire({
+                title: 'Error!',
+                text: 'Account not created successfully!',
+                icon: 'error',
+                confirmButtonText: 'Try Again',
+            });
         }
     };
     return (

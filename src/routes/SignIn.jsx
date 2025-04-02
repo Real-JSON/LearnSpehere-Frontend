@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/SignIn.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Swal from 'sweetalert2'; // Import SweetAlert2
 
 const SignIn = () => {
     const [formData, setFormData] = useState({
@@ -24,11 +25,23 @@ const SignIn = () => {
                 formData
             );
             console.log(response.data);
-            alert('Login Successful!');
-            navigate('/');
+            Swal.fire({
+                title: 'Success!',
+                text: 'Login successfull!',
+                icon: 'success',
+                confirmButtonText: 'OK',
+            }).then(() => {
+                navigate('/'); // Redirect to the home page after closing the alert
+            });
         } catch (error) {
             console.error(error.response?.data || error.message);
-            alert('Login not successful!');
+            // Use SweetAlert for error message
+            Swal.fire({
+                title: 'Error!',
+                text: 'Login not successfull!',
+                icon: 'error',
+                confirmButtonText: 'Try Again',
+            });
         }
     };
     return (
