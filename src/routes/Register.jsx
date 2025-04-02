@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Register.css';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const Register = () => {
         email: '',
         password: '',
     });
+
+    const navigate = useNavigate(); // Initialize navigate
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,6 +27,8 @@ const Register = () => {
             );
             console.log(response.data);
             alert('Account created successfully!');
+
+            navigate('/'); // Redirect to the home page
         } catch (error) {
             console.error(
                 'Error submitting form: ',

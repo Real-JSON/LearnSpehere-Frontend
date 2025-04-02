@@ -1,12 +1,36 @@
 import React, { useState } from 'react';
 import '../styles/SignIn.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const SignIn = () => {
     const [formData, setFormData] = useState({
         email: '',
         password: '',
     });
+
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.post(
+                'http://localhost:4000/auth/login',
+                formData
+            );
+            console.log(response.data);
+            alert('Login Successful!');
+            navigate('/');
+        } catch (error) {
+            console.error(error.response?.data || error.message);
+            alert('Login not successful!');
+        }
+    };
     return (
         <>
             <div className="signin-container">
@@ -24,7 +48,7 @@ const SignIn = () => {
                         </div>
                     </div>
                     <div className="signin-field">
-                        <div className="form">
+                        <div className="form" onSubmit={handleSubmit}>
                             <form action="POST">
                                 <h2>Welcome Back!</h2>
                                 <div className="form-group">
@@ -34,6 +58,7 @@ const SignIn = () => {
                                         name="email"
                                         placeholder="Email address "
                                         required
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <br />
@@ -44,11 +69,12 @@ const SignIn = () => {
                                         name="password"
                                         placeholder="Password"
                                         required
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <br />
                                 <div className="submit-btn">
-                                    <button>Sign In</button>
+                                    <button type="submit">Sign In</button>
                                 </div>
                             </form>
                             <a href="">Forget password?</a>
