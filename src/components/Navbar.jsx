@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header id="home">
+            <header className="nav-header" id="home">
                 <a href="#home" className="logo">
                     <i className="ri-donut-chart-fill"></i>
                     <span>LearnSphere</span>
