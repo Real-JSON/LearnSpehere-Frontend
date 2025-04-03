@@ -49,6 +49,12 @@
     height: 370px;
 }
 
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
 form {
     width: 100%;
 }
