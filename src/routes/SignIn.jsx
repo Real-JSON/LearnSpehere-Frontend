@@ -34,7 +34,7 @@ const SignIn = () => {
                 confirmButtonText: 'OK',
             }).then(() => {
                 resetForm(); // Reset form fields
-                navigate('/'); // Redirect to the home page
+                navigate('/dashboard'); // Redirect to the home page
             });
         } catch (error) {
             console.error(error.response?.data || error.message);

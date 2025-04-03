@@ -42,7 +42,7 @@ const Register = () => {
                 confirmButtonText: 'OK',
             }).then(() => {
                 resetForm(); // Reset form fields
-                navigate('/'); // Redirect to the home page
+                navigate('/signin'); // Redirect to the home page
             });
         } catch (error) {
             console.error(
