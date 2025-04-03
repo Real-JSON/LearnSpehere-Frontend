@@ -6,7 +6,7 @@ const Dashboard = () => {
         <>
             <div className="grid-container">
                 <header className="dashboard-header"></header>
-                <section className="sidebar"></section>
+                <section className="dashboard-sidebar"></section>
                 <main className="dashboard-main"></main>
             </div>
         </>
