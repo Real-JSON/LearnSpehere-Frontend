@@ -34,3 +34,8 @@
 .nav-list {
     display: flex;
 }
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+}
