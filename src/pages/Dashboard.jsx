@@ -27,10 +27,19 @@ const Dashboard = () => {
                 <section className="dashboard-sidebar">
                     <div className="sidebar-items-container">
                         <div className="sidebar-items">
-                            <div className="s-item">Dashboard</div>
-                            <div className="s-item">Subjects</div>
-                            <div className="s-item">Payments</div>
-                            <div className="s-item">Payment History</div>
+                            <div className="s-item">
+                                <i class="ri-dashboard-fill"></i> Dashboard
+                            </div>
+                            <div className="s-item">
+                                <i class="ri-book-open-fill"></i> Subjects
+                            </div>
+                            <div className="s-item">
+                                <i class="ri-money-dollar-circle-line"></i>{' '}
+                                Payments
+                            </div>
+                            <div className="s-item">
+                                <i class="ri-refund-2-line"></i> Payment History
+                            </div>
                         </div>
                     </div>
                 </section>
