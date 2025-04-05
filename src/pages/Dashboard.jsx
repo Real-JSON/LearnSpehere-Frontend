@@ -31,7 +31,9 @@ const Dashboard = () => {
                                 <i class="ri-dashboard-fill"></i> Dashboard
                             </div>
                             <div className="s-item">
-                                <i class="ri-book-open-fill"></i> Subjects
+                                <Link to="/subjects">
+                                    <i class="ri-book-open-fill"></i> Subjects
+                                </Link>
                             </div>
                             <div className="s-item">
                                 <i class="ri-money-dollar-circle-line"></i>{' '}
