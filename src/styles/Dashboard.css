@@ -17,13 +17,30 @@
 .dashboard-sidebar {
     background-color: var(--main-color);
     grid-area: sidebar;
+}
 
-    .sidebar-items-container {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+.sidebar-items-container {
+    padding: 10vh 3vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+
+    .s-item {
+        font-size: 1.2rem;
+        transition: 0.2s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+        }
     }
 }
 
