@@ -28,10 +28,12 @@ const Dashboard = () => {
                     <div className="sidebar-items-container">
                         <div className="sidebar-items">
                             <div className="s-item">
-                                <i class="ri-dashboard-fill"></i> Dashboard
+                                <Link to="/dashboard" className="navlink">
+                                    <i class="ri-dashboard-fill"></i> Dashboard
+                                </Link>
                             </div>
                             <div className="s-item">
-                                <Link to="/subjects">
+                                <Link to="/subjects" className="navlink">
                                     <i class="ri-book-open-fill"></i> Subjects
                                 </Link>
                             </div>

@@ -33,13 +33,14 @@
     align-items: flex-start;
     gap: 50px;
 }
-.s-item {
+
+.navlink {
     font-size: 1.1rem;
     transition: 0.2s ease;
 
     &:hover {
-        cursor: pointer;
         color: #fff;
+        cursor: pointer;
     }
 }
 
