@@ -8,28 +8,18 @@ const Dashboard = () => {
             <div className="grid-container">
                 <header className="dashboard-header">
                     <div className="nav-list">
-                        <a href="#home" className="logo">
+                        <Link to="/" className="logo">
+                            {' '}
                             <i className="ri-donut-chart-fill"></i>
                             <span>LearnSphere</span>
-                        </a>
+                        </Link>
                         {/* Add the 'open' class dynamically based on state */}
                         <ul className="nav-items">
                             <li>
-                                <Link to="/" className="active">
-                                    Home
-                                </Link>
+                                <i class="ri-user-3-fill"></i> Profile
                             </li>
                             <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="#courses">Courses</a>
-                            </li>
-                            <li>
-                                <a href="#tutor">Become a Tutor</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact Us</a>
+                                <i class="ri-settings-4-line"></i> Settings
                             </li>
                         </ul>
                     </div>
