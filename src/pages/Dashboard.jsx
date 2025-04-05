@@ -43,7 +43,14 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </section>
-                <main className="dashboard-main"></main>
+                <main className="dashboard-main">
+                    <div className="dashboard-card"></div>
+                    <div className="dashboard-card"></div>
+                    <div className="dashboard-card"></div>
+                    <div className="dashboard-card"></div>
+                    <div className="dashboard-card"></div>
+                    <div className="dashboard-card"></div>
+                </main>
             </div>
         </>
     );
