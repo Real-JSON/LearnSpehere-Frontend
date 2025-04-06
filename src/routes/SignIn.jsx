@@ -29,12 +29,14 @@ const SignIn = () => {
             navigate('/dashboard').then(() => {
                 resetForm(); // Reset form fields
                 // Show success message using SweetAlert
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Login successful!',
-                    icon: 'success',
-                    confirmButtonText: 'OK',
-                });
+                setTimeout(() => {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Login successful!',
+                        icon: 'success',
+                        confirmButtonText: 'OK',
+                    });
+                }, 500);
             });
         } catch (error) {
             console.error(error.response?.data || error.message);
