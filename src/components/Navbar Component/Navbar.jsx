@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/Navbar.css';
+import '../Navbar Component/Navbar.css';
 
 const Navbar = () => {
     // State to track whether the menu is open
