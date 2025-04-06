@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Home.css';
 import { Link } from 'react-router-dom';
 import homeImg from '../assets/freepik__upload__60907.jpeg';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar Component/Navbar';
 
 const Home = () => {
     return (

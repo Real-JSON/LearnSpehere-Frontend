@@ -1,7 +1,7 @@
 import '../styles/Footer.css';
 // import footerLogo from '../assets/logo/freepik__background__66091.png';
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar Component/Navbar';
 
 const Footer = () => {
     return (
