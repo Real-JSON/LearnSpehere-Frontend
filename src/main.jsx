@@ -39,6 +39,22 @@ const router = createBrowserRouter([
             </Dashboard>
         ),
     },
+    {
+        path: '/payments',
+        element: (
+            <Dashboard>
+                <Subject />
+            </Dashboard>
+        ),
+    },
+    {
+        path: '/payment-history',
+        element: (
+            <Dashboard>
+                <Subject />
+            </Dashboard>
+        ),
+    },
 ]);
 
 createRoot(document.getElementById('root')).render(
