@@ -25,16 +25,16 @@ const SignIn = () => {
                 values
             );
             console.log(response.data);
-
-            // Show success message using SweetAlert
-            Swal.fire({
-                title: 'Success!',
-                text: 'Login successful!',
-                icon: 'success',
-                confirmButtonText: 'OK',
-            }).then(() => {
+            // Redirect to the home page
+            navigate('/dashboard').then(() => {
                 resetForm(); // Reset form fields
-                navigate('/dashboard'); // Redirect to the home page
+                // Show success message using SweetAlert
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Login successful!',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                });
             });
         } catch (error) {
             console.error(error.response?.data || error.message);
