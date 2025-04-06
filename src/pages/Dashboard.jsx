@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Dashboard.css';
 import { Link } from 'react-router-dom';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
     return (
         <>
             <div className="grid-container">
@@ -38,47 +38,21 @@ const Dashboard = () => {
                                 </Link>
                             </div>
                             <div className="s-item">
-                                <i class="ri-money-dollar-circle-line"></i>{' '}
-                                Payments
+                                <Link to="/payments" className="navlink">
+                                    <i class="ri-money-dollar-circle-line"></i>{' '}
+                                    Payments
+                                </Link>
                             </div>
                             <div className="s-item">
-                                <i class="ri-refund-2-line"></i> Payment History
+                                <Link to="/payment-history" className="navlink">
+                                    <i class="ri-refund-2-line"></i> Payment
+                                    History
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </section>
-                <main className="dashboard-main">
-                    <div className="dashboard-card">
-                        <div className="card-content">
-                            <h2>Overview</h2>
-                        </div>
-                    </div>
-                    <div className="dashboard-card">
-                        <div className="card-content">
-                            <h2>Progress</h2>
-                        </div>
-                    </div>
-                    <div className="dashboard-card">
-                        <div className="card-content">
-                            <h2>Courses</h2>
-                        </div>
-                    </div>
-                    <div className="dashboard-card">
-                        <div className="card-content">
-                            <h2>Calendar</h2>
-                        </div>
-                    </div>
-                    <div className="dashboard-card">
-                        <div className="card-content">
-                            <h2>Certificates</h2>
-                        </div>
-                    </div>
-                    <div className="dashboard-card">
-                        <div className="card-content">
-                            <h2>Resources</h2>
-                        </div>
-                    </div>
-                </main>
+                <main className="dashboard-main">{props.children}</main>
             </div>
         </>
     );
