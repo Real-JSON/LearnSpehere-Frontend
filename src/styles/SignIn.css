@@ -42,14 +42,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: #ffffff; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     padding: 2vh 3vw;
-    height: 370px;
 }
 
 .error {
+    border-color: red;
     color: red;
     font-size: 0.9rem;
     margin-top: 5px;
@@ -112,7 +111,7 @@ form {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* margin-top: 10vh; */
+        gap: 4vw;
     }
     .signin-field {
         width: 50%;
