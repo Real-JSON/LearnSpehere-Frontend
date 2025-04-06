@@ -1,6 +1,6 @@
 import React from 'react';
 
-const dash = () => {
+const DashboardMain = () => {
     return (
         <>
             <div className="dashboard-card">
@@ -37,4 +37,4 @@ const dash = () => {
     );
 };
 
-export default dash;
+export default DashboardMain;

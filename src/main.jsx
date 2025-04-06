@@ -7,7 +7,7 @@ import SignIn from './routes/SignIn.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './routes/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
-import Dash from './components/DashboardComponent/dash.jsx';
+import DashboardMain from './components/DashboardComponent/DashboardMain.jsx';
 import Subject from './components/SubjectComponent/Subject.jsx';
 
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: (
             <Dashboard>
-                <Dash />
+                <DashboardMain />
             </Dashboard>
         ),
     },
