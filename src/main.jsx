@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import DashboardMain from './components/DashboardComponent/DashboardMain.jsx';
 import Subject from './components/SubjectComponent/Subject.jsx';
 import StickyHeadTable from './components/PaymentTable/StickyHeadTable.jsx';
+import SubjectCard from './components/SubjectCard/SubjecCard.jsx';
 
 const router = createBrowserRouter([
     {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
         path: '/subjects',
         element: (
             <Dashboard>
-                <Subject />
+                <SubjectCard />
             </Dashboard>
         ),
     },
