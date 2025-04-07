@@ -9,6 +9,7 @@ import Register from './routes/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import DashboardMain from './components/DashboardComponent/DashboardMain.jsx';
 import Subject from './components/SubjectComponent/Subject.jsx';
+import StickyHeadTable from './components/PaymentTable/StickyHeadTable.jsx';
 
 const router = createBrowserRouter([
     {
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
         path: '/payment-history',
         element: (
             <Dashboard>
-                <Subject />
+                <StickyHeadTable />
             </Dashboard>
         ),
     },
