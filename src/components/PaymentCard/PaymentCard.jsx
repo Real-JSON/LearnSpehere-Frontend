@@ -57,6 +57,7 @@ const PaymentCard = () => {
                                             type="text"
                                             className="input_field"
                                             id="password_field"
+                                            max={5}
                                         />
                                         <input
                                             placeholder="CVV"
