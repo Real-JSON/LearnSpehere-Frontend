@@ -172,6 +172,18 @@
     text-align: justify;
 }
 
+.cta-btn-card {
+    margin-top: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-btn-card button {
+    padding: 10px 20px;
+    background: var(--main-color);
+}
+
 @media screen and (max-width: 768px) {
     .course-card-area {
         flex-direction: column;
