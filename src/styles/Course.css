@@ -130,6 +130,10 @@
     filter: brightness(1);
 }
 
+.course-card:hover {
+    transform: scale(1.03);
+}
+
 .card-image {
     display: block;
     width: 100%;
