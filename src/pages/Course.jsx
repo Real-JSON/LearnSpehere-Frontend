@@ -158,7 +158,14 @@ const Course = () => {
                                     hic illum earum voluptatum odio laborum
                                     deserunt?
                                 </div>
-                                <div className="cta-btn-card"></div>
+                                <div className="cta-btn-card">
+                                    <div id="buy-now">
+                                        <button>Buy Now</button>
+                                    </div>
+                                    <div id="add-now">
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
