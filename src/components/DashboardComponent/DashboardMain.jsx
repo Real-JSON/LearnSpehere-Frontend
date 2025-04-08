@@ -1,6 +1,7 @@
 import React from 'react';
 import '../DashboardComponent/DashboardComponent.css';
 import Piechart from '../PieChart/Piechart';
+import BasicDateCalendar from '../CalendarComponent/BasicDateCalendar';
 
 const DashboardMain = () => {
     return (
@@ -9,7 +10,7 @@ const DashboardMain = () => {
                 <div className="dashboard-card">
                     <div className="card-content">
                         <h2>Overview</h2>
-                        <Piechart />
+                        {/* <Piechart /> */}
                     </div>
                 </div>
                 <div className="dashboard-card">

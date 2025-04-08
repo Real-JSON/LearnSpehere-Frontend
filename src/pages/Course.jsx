@@ -93,16 +93,21 @@ const Course = () => {
                                 <h3>
                                     Artificial Intelligence & Machine Learning
                                 </h3>
-                                <p>
+                                <div className="content-of-card">
+                                    <p>Catergorized</p>
+                                    <p>
+                                        <i class="ri-user-fill"></i> John Doe
+                                    </p>
+                                </div>
+                                <br />
+                                <div className="card-description">
                                     Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Sunt, earum! Lorem ipsum
-                                    dolor sit amet consectetur adipisicing elit.
-                                    Tempora perspiciatis itaque omnis ratione
-                                    eum, asperiores aspernatur harum. Alias
-                                    facere qui officia voluptatum, deleniti
-                                    veniam labore unde, libero minima accusamus
-                                    suscipit!
-                                </p>
+                                    adipisicing elit. Voluptates incidunt illo
+                                    minus tempore, commodi fuga fugiat eveniet,
+                                    perspiciatis dolores quaerat totam saepe non
+                                    hic illum earum voluptatum odio laborum
+                                    deserunt?
+                                </div>
                             </div>
                         </div>
                         <div className="course-card">
@@ -111,18 +116,23 @@ const Course = () => {
                             </div>
                             <div className="card-content">
                                 <h3>
-                                    Artificial Intelligence & Machine Learning
+                                    Neural Network & Crypto Currency Sellers
                                 </h3>
-                                <p>
+                                <div className="content-of-card">
+                                    <p>Catergorized</p>
+                                    <p>
+                                        <i class="ri-user-fill"></i> Smith John
+                                    </p>
+                                </div>
+                                <br />
+                                <div className="card-description">
                                     Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Sunt, earum! Lorem ipsum
-                                    dolor sit amet consectetur adipisicing elit.
-                                    Tempora perspiciatis itaque omnis ratione
-                                    eum, asperiores aspernatur harum. Alias
-                                    facere qui officia voluptatum, deleniti
-                                    veniam labore unde, libero minima accusamus
-                                    suscipit!
-                                </p>
+                                    adipisicing elit. Voluptates incidunt illo
+                                    minus tempore, commodi fuga fugiat eveniet,
+                                    perspiciatis dolores quaerat totam saepe non
+                                    hic illum earum voluptatum odio laborum
+                                    deserunt?
+                                </div>
                             </div>
                         </div>
                         <div className="course-card">
@@ -133,16 +143,21 @@ const Course = () => {
                                 <h3>
                                     Cloud Computing & Infastructure Architecture
                                 </h3>
-                                <p>
+                                <div className="content-of-card">
+                                    <p>Catergorized</p>
+                                    <p>
+                                        <i class="ri-user-fill"></i> Carl Smith
+                                    </p>
+                                </div>
+                                <br />
+                                <div className="card-description">
                                     Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Sunt, earum! Lorem ipsum
-                                    dolor sit amet consectetur adipisicing elit.
-                                    Tempora perspiciatis itaque omnis ratione
-                                    eum, asperiores aspernatur harum. Alias
-                                    facere qui officia voluptatum, deleniti
-                                    veniam labore unde, libero minima accusamus
-                                    suscipit!
-                                </p>
+                                    adipisicing elit. Voluptates incidunt illo
+                                    minus tempore, commodi fuga fugiat eveniet,
+                                    perspiciatis dolores quaerat totam saepe non
+                                    hic illum earum voluptatum odio laborum
+                                    deserunt?
+                                </div>
                             </div>
                         </div>
                     </div>

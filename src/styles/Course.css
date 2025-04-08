@@ -160,6 +160,18 @@
     margin-bottom: 2vh;
 }
 
+.content-of-card {
+    margin-top: 2vh;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    /* gap: 6vw; */
+}
+
+.card-description {
+    text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
     .course-card-area {
         flex-direction: column;
