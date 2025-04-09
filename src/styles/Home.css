@@ -68,10 +68,6 @@
     opacity: 1;
 }
 
-#reserve-your-seat:hover {
-    /* transform: scale(1.1); */
-}
-
 #schedule-btn {
     height: 9vh;
     background: #ffff00;
