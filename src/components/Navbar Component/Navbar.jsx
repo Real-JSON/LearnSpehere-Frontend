@@ -41,7 +41,9 @@ const Navbar = () => {
                 </ul>
                 <div className="main">
                     <Link to="/signin" className="user">
-                        <i className="ri-user-line"></i>Sign In
+                        <div id="sign-in-btn">
+                            <i className="ri-user-line"></i>Sign In
+                        </div>
                     </Link>
                     <Link to="/register">
                         <div id="register-btn">Register</div>
