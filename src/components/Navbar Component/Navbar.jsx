@@ -43,7 +43,9 @@ const Navbar = () => {
                     <Link to="/signin" className="user">
                         <i className="ri-user-line"></i>Sign In
                     </Link>
-                    <Link to="/register">Register</Link>
+                    <Link to="/register">
+                        <div id="register-btn">Register</div>
+                    </Link>
                     {/* Add an onClick handler to toggle the menu */}
                     <div
                         className={`bx bx-menu ${isMenuOpen ? 'bx-x' : ''}`}

@@ -77,6 +77,13 @@
     color: var(--main-color);
 }
 
+#register-btn {
+    background: var(--main-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
 #menu-icon {
     font-size: 35px;
     cursor: pointer;
