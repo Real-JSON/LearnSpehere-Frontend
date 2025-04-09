@@ -40,6 +40,10 @@ html {
     scroll-behavior: smooth;
 }
 
+div {
+    scroll-margin-top: 20vh;
+}
+
 ul,
 ol {
     list-style: none;

@@ -22,9 +22,9 @@ const Navbar = () => {
                 {/* Add the 'open' class dynamically based on state */}
                 <ul className={`navbar ${isMenuOpen ? 'open' : ''}`}>
                     <li>
-                        <Link to="/" className="active">
+                        <a href="#home" className="active">
                             Home
-                        </Link>
+                        </a>
                     </li>
                     <li>
                         <a href="#about">About</a>
