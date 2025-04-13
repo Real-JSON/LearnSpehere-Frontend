@@ -39,16 +39,16 @@ const Footer = () => {
                         <h2>Company</h2>
                         <ul className="box">
                             <li>
-                                <a href="">About Us</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="">Services</a>
+                                <a href="#courses">Courses</a>
                             </li>
                             <li>
-                                <a href="">Community</a>
+                                <a href="#tutor">Become a Tutor</a>
                             </li>
                             <li>
-                                <a href="">Become a Tutor</a>
+                                <a href="contact">Contact Us</a>
                             </li>
                         </ul>
                     </li>

@@ -79,4 +79,5 @@
     background-color: #e5e6e9;
     grid-area: main;
     padding: 25px;
+    align-content: center;
 }
