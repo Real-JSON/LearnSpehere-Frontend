@@ -45,3 +45,34 @@
         grid-area: initial !important;
     }
 }
+
+/* Responsive Layout for Tablets */
+@media (max-width: 1024px) {
+    .dashboard-area {
+        grid-template-columns: 1fr 1fr; /* Two-column layout */
+        grid-template-rows: auto;
+        grid-template-areas:
+            'c1 c2'
+            'c3 c4'
+            'c5 c6';
+    }
+
+    .dashboard-card {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Responsive Layout for Mobile Devices */
+@media (max-width: 768px) {
+    .dashboard-area {
+        grid-template-columns: 1fr; /* Single-column layout */
+        grid-template-rows: auto;
+        grid-template-areas: initial; /* Remove specific grid areas */
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+
+    .dashboard-card {
+        grid-area: initial !important; /* Allow cards to flow naturally */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
