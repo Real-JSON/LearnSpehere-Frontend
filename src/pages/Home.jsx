@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
 import { Link } from 'react-router-dom';
-import homeImg from '../assets/freepik__upload__60907.jpeg';
 import Navbar from '../components/Navbar Component/Navbar';
 
 const Home = () => {
@@ -11,7 +10,13 @@ const Home = () => {
             <section>
                 <div className="front-main-banner">
                     <picture className="front-main-banner-picture">
-                        <img src={homeImg} alt="home_banner_image" />
+                        <img sizes="(max-width: 1400px) 100vw, 1400px"srcSet="
+                            /src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_200.jpg 200w,
+                            /src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_863.jpg 863w,
+                            /src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_1290.jpg 1290w,
+                            /src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_1400.jpg 1400w"
+                            src="/src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_1400.jpg"
+                            alt="hero-image"/>
                     </picture>
                     <div className="front-banner-text">
                         <h3>
@@ -31,7 +36,7 @@ const Home = () => {
                             <Link to="/register">
                                 {' '}
                                 reserve your seat{' '}
-                                <i class="ri-arrow-right-up-line"></i>
+                                <i className="ri-arrow-right-up-line"></i>
                             </Link>
                         </button>
                     </div>
