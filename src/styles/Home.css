@@ -17,6 +17,12 @@
     object-position: top center;
 }
 
+.banner-wrapper {
+    display: grid;
+    place-items: center;     /* Centers both vertically and horizontally */
+    min-height: 100vh;
+}
+
 .front-banner-text {
     position: relative;
     display: flex;
@@ -24,7 +30,7 @@
     align-items: center;
     text-align: center;
     padding: 5vh 5vw;
-    margin-top: 5vh;
+    /* Removed margin-top: 5vh; */
 }
 
 .front-banner-text h3 {
@@ -53,19 +59,17 @@
     border-radius: 50px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: clamp(1.3rem, 1.5vw, 3rem);
+    font-size: clamp(1.1rem, 1.5vw, 3rem);
     transition: 0.4s ease;
 }
 
 #reserve-your-seat i {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.2s ease;
+    display: inline-block; /* Required for transforms to work */
+    transition: transform 0.3s ease; /* Optional: adds a smooth animation */
 }
 
 #reserve-your-seat:hover i {
-    visibility: visible;
-    opacity: 1;
+   transform: rotate(45deg);
 }
 
 #schedule-btn {
@@ -84,6 +88,7 @@
 
 @media screen and (max-width: 768px) {
     .front-banner-text p {
+        display: none;
         max-width: 90%;
     }
 }
