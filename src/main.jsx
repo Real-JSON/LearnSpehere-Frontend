@@ -6,7 +6,7 @@ import SignIn from './routes/SignIn.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './routes/Register.jsx';
-import Dashboard from './pages/Dashboard.jsx';
+// import Dashboard from './pages/Dashboard.jsx';
 import DashboardMain from './components/DashboardComponent/DashboardMain.jsx';
 import Subject from './components/SubjectComponent/Subject.jsx';
 import StickyHeadTable from './components/PaymentTable/StickyHeadTable.jsx';
@@ -26,38 +26,38 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register />,
     },
-    {
-        path: '/dashboard',
-        element: (
-            <Dashboard>
-                <DashboardMain />
-            </Dashboard>
-        ),
-    },
-    {
-        path: '/subjects',
-        element: (
-            <Dashboard>
-                <SubjectCard />
-            </Dashboard>
-        ),
-    },
-    {
-        path: '/payments',
-        element: (
-            <Dashboard>
-                <PaymentCard />
-            </Dashboard>
-        ),
-    },
-    {
-        path: '/payment-history',
-        element: (
-            <Dashboard>
-                <StickyHeadTable />
-            </Dashboard>
-        ),
-    },
+    // {
+    //     path: '/dashboard',
+    //     element: (
+    //         <Dashboard>
+    //             <DashboardMain />
+    //         </Dashboard>
+    //     ),
+    // },
+    // {
+    //     path: '/subjects',
+    //     element: (
+    //         <Dashboard>
+    //             <SubjectCard />
+    //         </Dashboard>
+    //     ),
+    // },
+    // {
+    //     path: '/payments',
+    //     element: (
+    //         <Dashboard>
+    //             <PaymentCard />
+    //         </Dashboard>
+    //     ),
+    // },
+    // {
+    //     path: '/payment-history',
+    //     element: (
+    //         <Dashboard>
+    //             <StickyHeadTable />
+    //         </Dashboard>
+    //     ),
+    // },
 ]);
 
 createRoot(document.getElementById('root')).render(
