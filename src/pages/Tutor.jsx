@@ -1,5 +1,5 @@
 import React from 'react';
-import tutorImg from '../assets/Webinar-pana.png';
+import tutorImg from '../assets/images/backgrounds/bg-1.png';
 import '../styles/Tutor.css';
 
 const Tutor = () => {

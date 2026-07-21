@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/Course.css';
-import courseimg from '../assets/freepik__background__78432.png';
+import courseimg from '../assets/images/backgrounds/bg-2.png';
 
-import courseImg1 from '../assets/card-images/ai.jpg';
-import courseImg2 from '../assets/card-images/network.jpeg';
-import courseImg3 from '../assets/card-images/freepik__upload__16890.jpeg';
+import courseImg1 from '../assets/images/cards/1.webp';
+import courseImg2 from '../assets/images/cards/2.webp';
+import courseImg3 from '../assets/images/cards/3.webp';
 
 const Course = () => {
     return (

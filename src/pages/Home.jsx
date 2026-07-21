@@ -3,10 +3,10 @@ import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar Component/Navbar";
 
-import hero200 from "/src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_200.webp";
-import hero863 from "/src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_863.webp";
-import hero1290 from "/src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_1290.webp";
-import hero1400 from "/src/assets/hero-images/freepik__upload__60907_nwpgqt_c_scale,w_1400.webp";
+import hero200 from "/src/assets/images/hero/1_scale,w_200.webp";
+import hero863 from "/src/assets/images/hero/2_scale,w_863.webp";
+import hero1290 from "/src/assets/images/hero/3_scale,w_1290.webp";
+import hero1400 from "/src/assets/images/hero/4_scale,w_1400.webp";
 
 const Home = () => {
   return (
