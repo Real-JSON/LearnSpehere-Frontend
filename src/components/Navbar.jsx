@@ -1,63 +1,94 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import "./Navbar.css";
 
-// import "../Navbar Component/Navbar.css";
-
-const Navbar = () => {
-  // State to track whether the menu is open
+export default function ModernNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle the menu
-  const showNavbar = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the state
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <>
-      <header className="nav-header" id="home">
-        <a href="#home" className="logo">
+    <header className="site-header">
+      <div className="header-container">
+        {/* Logo */}
+        <a href="#home" className="logo" onClick={closeMenu}>
           <i className="ri-donut-chart-fill"></i>
           <span>LearnSphere</span>
         </a>
-        {/* Add the 'open' class dynamically based on state */}
-        <ul className={`navbar ${isMenuOpen ? "open" : ""}`}>
-          <li>
-            <a href="#home" className="active">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#courses">Courses</a>
-          </li>
-          <li>
-            <a href="#tutor">Become a Tutor</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Us</a>
-          </li>
-        </ul>
-        <div className="main">
-          <Link to="/signin" className="user">
-            <div id="sign-in-btn">
-              <i className="ri-user-line"></i>Sign In
-            </div>
-          </Link>
-          <Link to="/register">
-            <div id="register-btn">Register</div>
-          </Link>
-          {/* Add an onClick handler to toggle the menu */}
-          <div
-            className={`bx bx-menu ${isMenuOpen ? "bx-x" : ""}`}
-            id="menu-icon"
-            onClick={showNavbar}
-          ></div>
-        </div>
-      </header>
-    </>
-  );
-};
 
-export default Navbar;
+        {/* Mobile Backdrop Overlay */}
+        <div
+          className={`nav-overlay ${isMenuOpen ? "active" : ""}`}
+          onClick={closeMenu}
+        ></div>
+
+        {/* Navigation Links */}
+        <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+          <ul className="nav-list">
+            <li>
+              <a href="#home" className="nav-link active" onClick={closeMenu}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="nav-link" onClick={closeMenu}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#courses" className="nav-link" onClick={closeMenu}>
+                Courses
+              </a>
+            </li>
+            <li>
+              <a href="#tutor" className="nav-link" onClick={closeMenu}>
+                Become a Tutor
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link" onClick={closeMenu}>
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+          {/* Auth buttons included inside mobile menu drawer for smaller screens */}
+          <div className="nav-auth-mobile">
+            <Link to="/signin" className="btn btn-outline" onClick={closeMenu}>
+              <i className="ri-user-line"></i> Sign In
+            </Link>
+            <Link
+              to="/register"
+              className="btn btn-primary"
+              onClick={closeMenu}
+            >
+              Register
+            </Link>
+          </div>
+        </nav>
+
+        {/* Desktop Auth Buttons & Mobile Toggle */}
+        <div className="header-actions">
+          <div className="nav-auth-desktop">
+            <Link to="/signin" className="btn btn-outline">
+              <i className="ri-user-line"></i> Sign In
+            </Link>
+            <Link to="/register" className="btn btn-primary">
+              Register
+            </Link>
+          </div>
+
+          {/* Toggle Button */}
+          <button
+            className="menu-toggle"
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+          >
+            <i className={isMenuOpen ? "ri-close-line" : "ri-menu-line"}></i>
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
