@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./Navbar.css";
+import "./Navbar Component/Navbar.css";
 
 export default function ModernNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,8 +23,18 @@ export default function ModernNavbar() {
           onClick={closeMenu}
         ></div>
 
-        {/* Navigation Links */}
+        {/* Navigation Drawer */}
         <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+          {/* Mobile Close Button inside drawer */}
+          <button
+            className="drawer-close-btn"
+            onClick={closeMenu}
+            aria-label="Close navigation menu"
+          >
+            <i className="ri-close-line"></i>
+          </button>
+
+          {/* Navigation Links */}
           <ul className="nav-list">
             <li>
               <a href="#home" className="nav-link active" onClick={closeMenu}>
@@ -53,7 +63,7 @@ export default function ModernNavbar() {
             </li>
           </ul>
 
-          {/* Auth buttons included inside mobile menu drawer for smaller screens */}
+          {/* Mobile Auth Buttons inside drawer */}
           <div className="nav-auth-mobile">
             <Link to="/signin" className="btn btn-outline" onClick={closeMenu}>
               <i className="ri-user-line"></i> Sign In
@@ -68,7 +78,7 @@ export default function ModernNavbar() {
           </div>
         </nav>
 
-        {/* Desktop Auth Buttons & Mobile Toggle */}
+        {/* Desktop Auth Buttons & Mobile Hamburger Toggle */}
         <div className="header-actions">
           <div className="nav-auth-desktop">
             <Link to="/signin" className="btn btn-outline">
@@ -79,13 +89,13 @@ export default function ModernNavbar() {
             </Link>
           </div>
 
-          {/* Toggle Button */}
+          {/* Hamburger Toggle */}
           <button
             className="menu-toggle"
             onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
+            aria-label="Open navigation menu"
           >
-            <i className={isMenuOpen ? "ri-close-line" : "ri-menu-line"}></i>
+            <i className="ri-menu-line"></i>
           </button>
         </div>
       </div>

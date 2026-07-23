@@ -21,7 +21,7 @@
 }
 
 .header-container {
-  max-width: 1420px;
+  max-width: 1280px;
   height: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -86,7 +86,6 @@
   display: none;
 }
 
-/* Shared Button Styles */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -117,8 +116,8 @@
   background-color: var(--primary-hover);
 }
 
-/* Toggle Menu Button */
-.menu-toggle {
+.menu-toggle,
+.drawer-close-btn {
   display: none;
   background: none;
   border: none;
@@ -137,8 +136,15 @@
     display: block;
   }
 
+  .drawer-close-btn {
+    display: block;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+
   .nav-auth-desktop {
-    display: none; /* Hide top bar auth buttons on smaller screens */
+    display: none;
   }
 
   /* Slide-out Mobile Menu Drawer */
@@ -147,13 +153,15 @@
     top: 0;
     right: 0;
     width: 280px;
-    height: 100vh;
+    max-width: 85vw; /* Prevents overflow on very narrow screens */
+    height: 100dvh; /* Dynamic viewport height handles mobile address bars */
     background-color: var(--bg-color);
     box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
-    padding: calc(var(--header-height) + 1rem) 2rem 2rem;
+    padding: 4.5rem 1.5rem 2rem; /* Top padding leaves room for close button */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto; /* Enables vertical scroll if screen height is short */
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
@@ -166,21 +174,20 @@
   .nav-list {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .nav-link {
     font-size: 1.1rem;
   }
 
-  /* Mobile Auth Buttons inside drawer */
   .nav-auth-mobile {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     width: 100%;
     margin-top: 2rem;
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
     border-top: 1px solid #f3f4f6;
   }
 
@@ -189,7 +196,7 @@
     width: 100%;
   }
 
-  /* Dark Overlay backdrop */
+  /* Dark Overlay Backdrop */
   .nav-overlay {
     position: fixed;
     inset: 0;
