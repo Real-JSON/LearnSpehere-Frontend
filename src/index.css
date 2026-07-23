@@ -739,3 +739,264 @@ h2 {
     gap: 24vw;
   }
 }
+
+:root {
+  --primary-orange: #ff9f43;
+  --primary-purple: #6c5ce7;
+  --text-dark: #1e272e;
+  --text-muted: #636e72;
+  --bg-light: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+/* Left Content Styles */
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+  position: relative;
+}
+
+.decorative-doodle {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-title .highlight {
+  color: var(--primary-orange);
+  position: relative;
+  display: inline-block;
+}
+
+/* Subtle orange underline under "Success" */
+.hero-title .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-orange);
+  border-radius: 2px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Subscribe Input Container */
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-light);
+  border: 1px solid #e1e8ed;
+  border-radius: 50px;
+  padding: 6px 8px 6px 20px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.email-icon {
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.input-group input::placeholder {
+  color: #a4b0be;
+}
+
+.subscribe-btn {
+  background-color: var(--primary-purple);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background-color: #574b90;
+}
+
+/* Reviews Section */
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: -10px;
+  object-fit: cover;
+}
+
+.rating-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-orange);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  gap: 2px;
+  border: 2px solid #fff;
+}
+
+.reviews-text h4 {
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.reviews-text p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Right Image Section */
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circular Dotted Background */
+.dots-pattern {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background-image: radial-gradient(var(--primary-orange) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .decorative-doodle {
+    display: none;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .subscribe-box {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews-container {
+    justify-content: center;
+  }
+
+  .dots-pattern {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .input-group {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+    border-radius: 12px;
+  }
+}

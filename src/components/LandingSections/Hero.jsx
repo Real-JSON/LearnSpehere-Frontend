@@ -1,49 +1,80 @@
 import React from "react";
-// import "../styles/Home.css";
-import { Link } from "react-router-dom";
+// import "./HeroSection.css";
 
-import hero200 from "../../assets/images/hero/1_scale,w_200.webp";
-import hero863 from "../../assets/images/hero/2_scale,w_863.webp";
-import hero1290 from "../../assets/images/hero/3_scale,w_1290.webp";
-import hero1400 from "../../assets/images/hero/4_scale,w_1400.webp";
-
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <>
-      <section>
-        <div className="front-main-banner">
-          <picture className="front-main-banner-picture">
-            <img
-              sizes="(max-width: 1400px) 100vw, 1400px"
-              srcSet={`${hero200} 200w, ${hero863} 863w, ${hero1290} 1290w, ${hero1400} 1400w`}
-              src={hero1400}
-              alt="hero-image"
-            />
-          </picture>
-          <div className="banner-wrapper">
-            <div className="front-banner-text">
-              <h3>
-                Your Best E-Learning Platform <br />
-                <span id="banner-text-span">At Your Fingertips</span>
-              </h3>
-              <p>
-                "Unlock the power of learning with our top-tier e-learning
-                platform. Accessible anytime, anywhere, right at your
-                fingertips. Learn, grow, and succeed with ease!"
-              </p>
+    <section className="hero-container">
+      {/* Left Content Area */}
+      <div className="hero-content">
+        <div className="decorative-doodle">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 50 50"
+            fill="none"
+            stroke="#a29bfe"
+            strokeWidth="3"
+          >
+            <path d="M10,15 L20,5 L30,25 L40,10" />
+          </svg>
+        </div>
 
-              <button id="reserve-your-seat">
-                <Link to="/register">
-                  {" "}
-                  reserve your seat <i className="ri-arrow-right-up-line"></i>
-                </Link>
-              </button>
+        <h1 className="hero-title">
+          Education is the <br />
+          Way to <span className="highlight">Success.</span>
+        </h1>
+
+        <p className="hero-description">
+          Education is a key to success and freedom from all the forces is a
+          power and makes a person powerful.
+        </p>
+
+        {/* Email Subscription Box */}
+        <div className="subscribe-box">
+          <div className="input-group">
+            <span className="email-icon">✉️</span>
+            <input type="email" placeholder="Enter your email address" />
+          </div>
+          <button className="subscribe-btn">Subscribe Now</button>
+        </div>
+
+        {/* Reviews / Proof Section */}
+        <div className="reviews-container">
+          <div className="avatar-group">
+            <img
+              src="https://i.pravatar.cc/100?img=12"
+              alt="Student"
+              className="avatar"
+            />
+            <img
+              src="https://i.pravatar.cc/100?img=33"
+              alt="Student"
+              className="avatar"
+            />
+            <div className="rating-badge">
+              <span>4.9</span>
+              <span className="star">★</span>
             </div>
           </div>
+          <div className="reviews-text">
+            <h4>Learners Reviews</h4>
+            <p>2000+ Fully Satisfied Students</p>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+
+      {/* Right Image / Hero Graphic Area */}
+      <div className="hero-image-wrapper">
+        <div className="dots-pattern"></div>
+        {/* Replace image URL with your actual asset URL */}
+        <img
+          src="https://eduxo-html.netlify.app/demo/images/banner-2.png"
+          alt="Student holding books"
+          className="hero-img"
+        />
+      </div>
+    </section>
   );
 };
 
-export default Hero;
+export default HeroSection;
