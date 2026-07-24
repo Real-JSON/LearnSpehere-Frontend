@@ -73,6 +73,7 @@ const HeroSection = () => {
           src={HeroImage}
           alt="Student holding books"
           className="hero-img"
+          fetchPriority="high"
         />
       </div>
     </section>
