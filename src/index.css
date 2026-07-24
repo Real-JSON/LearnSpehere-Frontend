@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -239,7 +239,9 @@ img {
   background: #fbfbfb;
   border-radius: 24px;
   transition: 0.5s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .course-card:hover .card-image img {
@@ -325,7 +327,7 @@ img {
 }
 
 #add-now::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -439,7 +441,9 @@ h2 {
 
 .box a {
   color: #fcfcfc;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .box a:hover {
@@ -796,9 +800,9 @@ h2 {
 
 /* Subtle orange underline under "Success" */
 .hero-title .highlight::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 6px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -928,7 +932,10 @@ h2 {
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  background-image: radial-gradient(var(--primary-orange) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(
+    var(--primary-orange) 1.5px,
+    transparent 1.5px
+  );
   background-size: 16px 16px;
   opacity: 0.35;
   z-index: 1;

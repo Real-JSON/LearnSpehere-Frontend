@@ -103,7 +103,7 @@ const PopularCourses = () => {
                     <button>Buy Now</button>
                   </div>
                   <div id="add-now">
-                    <button>Add to Cart</button>
+                    <button>View Course</button>
                   </div>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const PopularCourses = () => {
                     <button>Buy Now</button>
                   </div>
                   <div id="add-now">
-                    <button>Add to Cart</button>
+                    <button>View Course</button>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const PopularCourses = () => {
                     <button>Buy Now</button>
                   </div>
                   <div id="add-now">
-                    <button>Add to Cart</button>
+                    <button>View Course</button>
                   </div>
                 </div>
               </div>
