@@ -13,10 +13,7 @@ const Footer = () => {
             <span>LearnSphere</span>
           </a>
           <p>
-            dolor sit amet consectetur adipisicing elit. Illum, aut?dolor sit
-            amet consectetur adipisicing elit. Vitae, ipsum veritatis sequi
-            reiciendis quaerat repellat natus officia officiis dolorum quia
-            dicta ab nulla distinctio cum voluptate, sunt maxime optio deserunt!
+            Empowering the next generation of professionals. LearnSphere brings high-quality courses, industry experts, and flexible online learning directly to your fingertips.
           </p>
           <div className="socials">
             <a href="">

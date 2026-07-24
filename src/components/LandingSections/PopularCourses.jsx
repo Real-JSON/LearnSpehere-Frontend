@@ -24,8 +24,8 @@ const PopularCourses = () => {
                 <div className="course-name">
                   <h3>Online Degrees</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, aspernatur.
+                    Earn industry-recognized certificates to showcase your
+                    expertise and boost your resume.
                   </p>
                 </div>
               </div>
@@ -36,8 +36,8 @@ const PopularCourses = () => {
                 <div className="course-name">
                   <h3>20+ Lessons</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, aspernatur.
+                    Access structured, step-by-step lessons designed by top
+                    professionals to master any skill.
                   </p>
                 </div>
               </div>
@@ -48,8 +48,8 @@ const PopularCourses = () => {
                 <div className="course-name">
                   <h3>Lifetime Access</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, aspernatur.
+                    Learn at your own pace with unlimited, lifetime access to
+                    all course materials and future updates.
                   </p>
                 </div>
               </div>
@@ -60,8 +60,8 @@ const PopularCourses = () => {
                 <div className="course-name">
                   <h3>Community Support</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, aspernatur.
+                    Connect with thousands of fellow learners, collaborate on
+                    projects, and get instant feedback.
                   </p>
                 </div>
               </div>
@@ -94,10 +94,9 @@ const PopularCourses = () => {
                 </div>
                 <br />
                 <div className="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates incidunt illo minus tempore, commodi fuga fugiat
-                  eveniet, perspiciatis dolores quaerat totam saepe non hic
-                  illum earum voluptatum odio laborum deserunt?
+                  Master AI core concepts, neural network foundations, and
+                  practical machine learning algorithms to build intelligent,
+                  real-world applications.
                 </div>
                 <div className="cta-btn-card">
                   <div id="buy-now">
@@ -123,10 +122,9 @@ const PopularCourses = () => {
                 </div>
                 <br />
                 <div className="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates incidunt illo minus tempore, commodi fuga fugiat
-                  eveniet, perspiciatis dolores quaerat totam saepe non hic
-                  illum earum voluptatum odio laborum deserunt?
+                  Explore the intersection of deep learning and decentralized
+                  tech. Understand neural architectures, smart contracts, and
+                  crypto protocols.
                 </div>
                 <div className="cta-btn-card">
                   <div id="buy-now">
@@ -152,10 +150,7 @@ const PopularCourses = () => {
                 </div>
                 <br />
                 <div className="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates incidunt illo minus tempore, commodi fuga fugiat
-                  eveniet, perspiciatis dolores quaerat totam saepe non hic
-                  illum earum voluptatum odio laborum deserunt?
+                  Learn to design, deploy, and scale high-performance cloud infrastructure across leading cloud platforms with modern DevOps practices.
                 </div>
                 <div className="cta-btn-card">
                   <div id="buy-now">

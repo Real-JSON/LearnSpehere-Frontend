@@ -20,13 +20,13 @@ const HeroSection = () => {
         </div>
 
         <h1 className="hero-title">
-          Education is the <br />
-          Way to <span className="highlight">Success.</span>
+           
+          Unlock Your Future <br />
+          with <span className="highlight">LearnSphere</span>
         </h1>
 
         <p className="hero-description">
-          Education is a key to success and freedom from all the forces is a
-          power and makes a person powerful.
+          Explore hundreds of interactive courses designed to help you gain practical experience and achieve your goals.
         </p>
 
         {/* Email Subscription Box */}

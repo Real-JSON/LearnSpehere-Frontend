@@ -15,11 +15,7 @@ const Tutor = () => {
                   <span>become an instructor</span>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aspernatur explicabo temporibus accusantium alias, illum
-                  tenetur assumenda obcaecati eligendi voluptatem est
-                  perferendis? Itaque deserunt aspernatur consequatur est omnis
-                  nihil. Facilis, soluta.
+                  Share your expertise with thousands of eager students worldwide. Join our global network of educators, build your personal brand, and earn income doing what you love with our powerful teaching tools.
                 </p>
               </div>
               <div className="tutor-benefits">
@@ -28,14 +24,14 @@ const Tutor = () => {
                   <ul>
                     <li>Flexible Schedule</li>
                     <li>Work from Anywhere</li>
-                    <li>Extra Income</li>
-                    <li>Global Reach</li>
+                    <li>Earn Extra Income</li>
+                    <li>Global Student Reach</li>
                   </ul>
                   <ul>
-                    <li>Flexible Schedule</li>
-                    <li>Work from Anywhere</li>
-                    <li>Extra Income</li>
-                    <li>Global Reach</li>
+                    <li>Full Content Control</li>
+                    <li>Interactive Teaching Tools</li>
+                    <li>Dedicated Support Team</li>
+                    <li>Build Your Personal Brand</li>
                   </ul>
                 </div>
               </div>
