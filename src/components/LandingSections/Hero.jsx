@@ -1,6 +1,8 @@
 import React from "react";
 // import "./HeroSection.css";
 
+import HeroImage from '../../assets/images/hero/bg-1.png'
+
 const HeroSection = () => {
   return (
     <section className="hero-container">
@@ -68,7 +70,7 @@ const HeroSection = () => {
         <div className="dots-pattern"></div>
         {/* Replace image URL with your actual asset URL */}
         <img
-          src="https://eduxo-html.netlify.app/demo/images/banner-2.png"
+          src={HeroImage}
           alt="Student holding books"
           className="hero-img"
         />
