@@ -1,7 +1,7 @@
 import React from "react";
 // import "./HeroSection.css";
 
-import HeroImage from '../../assets/images/hero/bg-1.png'
+// import HeroImage from '../../assets/images/hero/bg-1.png'
 
 const HeroSection = () => {
   return (
@@ -70,7 +70,7 @@ const HeroSection = () => {
         <div className="dots-pattern"></div>
         {/* Replace image URL with your actual asset URL */}
         <img
-          src={HeroImage}
+          src="/images/hero/bg-1.png"
           alt="Student holding books"
           className="hero-img"
           fetchPriority="high"
