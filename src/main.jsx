@@ -14,6 +14,7 @@ import Subject from './components/SubjectComponent/Subject.jsx';
 import StickyHeadTable from './components/PaymentTable/StickyHeadTable.jsx';
 import SubjectCard from './components/SubjectCard/SubjecCard.jsx';
 import PaymentCard from './components/PaymentCard/PaymentCard.jsx';
+import Course from './pages/Course.jsx';
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     {
         path: '/register',
         element: <Register />,
+    },
+    {
+        path: '/courses',
+        element: <Course />,
     },
     // {
     //     path: '/dashboard',
