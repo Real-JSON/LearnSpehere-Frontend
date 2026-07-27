@@ -86,7 +86,7 @@ img {
 }
 
 .about-text {
-  @apply flex px-[10px] flex-col items-center text-center;
+  @apply flex px-2.5 flex-col items-center text-center;
 }
 
 .about-text h3 {
@@ -106,7 +106,7 @@ img {
 }
 
 .benefit-icon i {
-  @apply bg-[#fb2812] flex rounded-full p-[10px] text-[36px];
+  @apply bg-[#fb2812] flex rounded-full p-2.5 text-[36px];
 }
 
 .benefit-icon {
@@ -114,7 +114,7 @@ img {
 }
 
 .icon-text {
-  @apply px-[10px];
+  @apply px-2.5;
 }
 
 .icon-text p {
@@ -126,15 +126,15 @@ img {
    ========================================== */
 
 .course-container {
-  @apply w-[90%] my-[25vh] mx-auto px-[20px] max-md:my-[12vh] max-md:mt-0;
+  @apply w-[90%] my-[25vh] mx-auto px-5 max-md:my-[12vh] max-md:mt-0;
 }
 
 .courses {
-  @apply flex justify-between items-center flex-wrap max-md:flex-col max-md:p-[20px];
+  @apply flex justify-between items-center flex-wrap max-md:flex-col max-md:p-5;
 }
 
 .course-image {
-  @apply flex-1 mr-[40px] overflow-hidden max-md:mr-0 max-md:mb-[20px];
+  @apply flex-1 mr-10 overflow-hidden max-md:mr-0 max-md:mb-5;
 }
 
 .course-image img {
@@ -158,7 +158,7 @@ img {
 }
 
 .course-icon i {
-  @apply text-white text-center bg-(--main-color) px-[10px] py-[6px] rounded-full text-[32px];
+  @apply text-white text-center bg-(--main-color) px-2.5 py-1.5 rounded-full text-[32px];
 }
 
 .popular-course-container {
@@ -182,11 +182,11 @@ img {
 }
 
 .course-card-area {
-  @apply mt-[10vh] flex items-center justify-center w-[90%] max-md:flex-col max-md:gap-[15px];
+  @apply mt-[10vh] flex items-center justify-center w-[90%] max-md:flex-col max-md:gap-3.75;
 }
 
 .course-card {
-  @apply max-w-full mx-[10px] p-[8px] bg-[#fbfbfb] rounded-[24px] transition-all duration-500 ease-in-out shadow-[0_4px_6px_rgba(0,0,0,0.1),0_1px_3px_rgba(0,0,0,0.08)] hover:scale-[1.03];
+  @apply max-w-full mx-2.5 p-2 bg-[#fbfbfb] rounded-3xl transition-all duration-500 ease-in-out shadow-[0_4px_6px_rgba(0,0,0,0.1),0_1px_3px_rgba(0,0,0,0.08)] hover:scale-[1.03];
 }
 
 .course-card:hover .card-image img {
@@ -202,7 +202,7 @@ img {
 }
 
 .card-content {
-  @apply py-[20px] px-[15px] flex flex-col items-center text-center h-full;
+  @apply py-5 px-3.75 flex flex-col items-center text-center h-full;
 }
 
 .card-content h3 {
@@ -222,7 +222,7 @@ img {
 }
 
 .cta-btn-card button {
-  @apply text-center py-[10px] px-[20px] text-black text-base hover:cursor-pointer;
+  @apply text-center py-2.5 px-5 text-black text-base hover:cursor-pointer;
 }
 
 #buy-now {
@@ -247,7 +247,7 @@ img {
    ========================================== */
 
 footer {
-  @apply flex flex-row flex-wrap pt-[25px] pr-[30px] pb-[15px] pl-[25px] bg-(--main-color) mt-[10vh] max-sm:p-[15px];
+  @apply flex flex-row flex-wrap pt-6.25 pr-7.5 pb-3.75 pl-6.25 bg-(--main-color) mt-[10vh] max-sm:p-3.75;
 }
 
 .footer > * {
@@ -259,7 +259,7 @@ footer {
 }
 
 .footer-logo i {
-  @apply text-[28px] mr-[5px] text-[#fcfcfc];
+  @apply text-[28px] mr-1.25 text-[#fcfcfc];
 }
 
 .footer-logo span {
@@ -311,11 +311,11 @@ h2 {
 }
 
 .socials a {
-  @apply w-[40px] h-[40px] flex justify-center items-center mr-[10px];
+  @apply w-10 h-10 flex justify-center items-center mr-2.5;
 }
 
 .socials a i {
-  @apply text-[#fcfcfc] py-[10px] px-[12px] text-[20px] transition-all duration-300 ease-in-out hover:text-[#b35043];
+  @apply text-[#fcfcfc] py-2.5 px-3 text-[20px] transition-all duration-300 ease-in-out hover:text-[#b35043];
 }
 
 /* ==========================================
@@ -351,7 +351,7 @@ h2 {
 }
 
 #reserve-your-seat {
-  @apply flex gap-[5px] bg-(--main-color) py-[15px] px-[30px] rounded-full uppercase font-semibold text-[clamp(1.1rem,1.5vw,3rem)] transition-all duration-400 ease-in-out;
+  @apply flex gap-1.25 bg-(--main-color) py-3.75 px-7.5 rounded-full uppercase font-semibold text-[clamp(1.1rem,1.5vw,3rem)] transition-all duration-400 ease-in-out;
 }
 
 #reserve-your-seat i {
@@ -407,15 +407,15 @@ h2 {
 }
 
 .tutor-li {
-  @apply flex justify-between items-center gap-[10vw] px-[20px] max-md:mb-[10vh] max-[425px]:gap-[24vw];
+  @apply flex justify-between items-center gap-[10vw] px-5 max-md:mb-[10vh] max-[425px]:gap-[24vw];
 }
 
 .tutor-li li {
-  @apply py-[5px] w-[90%] text-[clamp(1.2rem,1.2vw,3rem)] list-disc;
+  @apply py-1.25 w-[90%] text-[clamp(1.2rem,1.2vw,3rem)] list-disc;
 }
 
 .tutor-image {
-  @apply ml-[30px] overflow-hidden max-md:m-0;
+  @apply ml-7.5 overflow-hidden max-md:m-0;
 }
 
 .tutor-image img {
@@ -427,7 +427,7 @@ h2 {
 }
 
 #become-an-instructor {
-  @apply bg-(--main-color) py-[15px] px-[30px] rounded-full transition-all duration-300 ease-in-out text-[1.3rem] capitalize my-[5vh] hover:scale-110;
+  @apply bg-(--main-color) py-3.75 px-7.5 rounded-full transition-all duration-300 ease-in-out text-[1.3rem] capitalize my-[5vh] hover:scale-110;
 }
 
 /* ==========================================
@@ -435,19 +435,19 @@ h2 {
    ========================================== */
 
 .hero-container {
-  @apply flex items-center justify-between max-w-[1200px] my-0 mx-auto px-[20px] min-h-screen gap-[40px] max-md:flex-col max-md:text-center max-md:pt-[60px];
+  @apply flex items-center justify-between max-w-300 my-0 mx-auto px-5 min-h-screen gap-10 max-md:flex-col max-md:text-center max-md:pt-15;
 }
 
 .hero-content {
-  @apply flex-1 max-w-[550px] relative max-md:max-w-full;
+  @apply flex-1 max-w-137.5 relative max-md:max-w-full;
 }
 
 .decorative-doodle {
-  @apply absolute top-[30px] left-[40px] max-md:hidden;
+  @apply absolute top-7.5 left-10 max-md:hidden;
 }
 
 .hero-title {
-  @apply text-[3rem] font-extrabold text-(--text-dark) leading-[1.2] mb-[20px] max-md:text-[2.3rem] max-[480px]:text-[1.8rem];
+  @apply text-[3rem] font-extrabold text-(--text-dark) leading-[1.2] mb-5 max-md:text-[2.3rem] max-[480px]:text-[1.8rem];
 }
 
 .hero-title .highlight {
@@ -456,19 +456,19 @@ h2 {
 
 .hero-title .highlight::after {
   content: "";
-  @apply absolute bottom-[6px] left-0 w-full h-[3px] bg-(--main-color) rounded-[2px];
+  @apply absolute bottom-1.5 left-0 w-full h-0.75 bg-(--main-color) rounded-xs;
 }
 
 .hero-description {
-  @apply text-base text-(--text-muted) leading-[1.6] mb-[30px];
+  @apply text-base text-(--text-muted) leading-[1.6] mb-7.5;
 }
 
 .subscribe-box {
-  @apply flex items-center bg-(--bg-light) border border-[#e1e8ed] rounded-full pt-[6px] pr-[8px] pb-[6px] pl-[20px] mb-[35px] shadow-[0_4px_15px_rgba(0,0,0,0.03)] max-md:max-w-[450px] max-md:mx-auto max-[480px]:flex-col max-[480px]:rounded-[16px] max-[480px]:p-[12px] max-[480px]:gap-[10px];
+  @apply flex items-center bg-(--bg-light) border border-[#e1e8ed] rounded-full pt-1.5 pr-2 pb-1.5 pl-5 mb-8.75 shadow-[0_4px_15px_rgba(0,0,0,0.03)] max-md:max-w-112.5 max-md:mx-auto max-[480px]:flex-col max-[480px]:rounded-2xl max-[480px]:p-3 max-[480px]:gap-2.5;
 }
 
 .input-group {
-  @apply flex items-center flex-1 gap-[10px] max-[480px]:w-full max-[480px]:p-[5px];
+  @apply flex items-center flex-1 gap-2.5 max-[480px]:w-full max-[480px]:p-1.25;
 }
 
 .email-icon {
@@ -480,11 +480,11 @@ h2 {
 }
 
 .subscribe-btn {
-  @apply bg-(--cta-btns) text-white border-none py-[14px] px-[28px] rounded-[40px] font-semibold cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap hover:bg-[#e56155] max-[480px]:w-full max-[480px]:rounded-[12px];
+  @apply bg-(--cta-btns) text-white border-none py-3.5 px-7 rounded-[40px] font-semibold cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap hover:bg-[#e56155] max-[480px]:w-full max-[480px]:rounded-xl;
 }
 
 .reviews-container {
-  @apply flex items-center gap-[15px] max-md:justify-center;
+  @apply flex items-center gap-3.75 max-md:justify-center;
 }
 
 .avatar-group {
@@ -492,11 +492,11 @@ h2 {
 }
 
 .avatar {
-  @apply w-[44px] h-[44px] rounded-full border-2 border-white mr-[10px] object-cover;
+  @apply w-11 h-11 rounded-full border-2 border-white mr-2.5 object-cover;
 }
 
 .rating-badge {
-  @apply w-[44px] h-[44px] rounded-full bg-(--primary-orange) text-white flex items-center justify-center font-bold text-[0.85rem] gap-[2px] border-2 border-white;
+  @apply w-11 h-11 rounded-full bg-(--primary-orange) text-white flex items-center justify-center font-bold text-[0.85rem] gap-0.5 border-2 border-white;
 }
 
 .reviews-text h4 {
@@ -512,11 +512,11 @@ h2 {
 }
 
 .dots-pattern {
-  @apply absolute w-[380px] h-[380px] rounded-full opacity-35 z-10 max-md:w-[280px] max-md:h-[280px];
+  @apply absolute w-95 h-95 rounded-full opacity-35 z-10 max-md:w-70 max-md:h-70;
   background-image: radial-gradient(var(--primary-orange) 1.5px, transparent 1.5px);
   background-size: 16px 16px;
 }
 
 .hero-img {
-  @apply relative z-20 max-w-full h-auto max-h-[520px] object-contain;
+  @apply relative z-20 max-w-full h-auto max-h-130 object-contain;
 }
