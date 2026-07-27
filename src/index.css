@@ -451,7 +451,7 @@ h2 {
 }
 
 .decorative-doodle {
-  @apply absolute top-7.5 left-10 max-md:hidden;
+  @apply absolute -top-7.5 -left-10 max-md:hidden;
 }
 
 .hero-title {
@@ -500,7 +500,7 @@ h2 {
 }
 
 .avatar {
-  @apply w-11 h-11 rounded-full border-2 border-white mr-2.5 object-cover;
+  @apply w-11 h-11 rounded-full border-2 border-white -mr-2.5 object-cover;
 }
 
 .rating-badge {
