@@ -1,3 +1,9 @@
+@import "tailwindcss";
+
+/* ==========================================
+   1. Theme Variables & Custom Styles
+   ========================================== */
+
 :root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
@@ -24,23 +30,28 @@
   --muted-green: #3d5a3a;
   --warm-biege: #f8e3c3;
   --deep-teal: #2b6777;
+
+  --primary-orange: #ff9f43;
+  --primary-purple: #6c5ce7;
+  --text-dark: #1e272e;
+  --text-muted: #636e72;
+  --bg-light: #f8f9fa;
 }
 
 /* ==========================================
    2. Global Resets & Base Styles
    ========================================== */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @apply m-0 p-0 box-border;
 }
 
 body {
-  min-height: 100vh;
+  @apply min-h-screen;
 }
 
 html {
-  scroll-behavior: smooth;
+  @apply scroll-smooth;
 }
 
 div {
@@ -49,962 +60,463 @@ div {
 
 ul,
 ol {
-  list-style: none;
+  @apply list-none;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+  @apply no-underline text-black;
 }
 
 button,
 input,
 textarea {
-  font-family: inherit;
-  border: none;
-  outline: none;
-  background: none;
+  @apply font-[inherit] border-none outline-none bg-transparent;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  @apply max-w-full h-auto block;
 }
 
 /* ==========================================
    3. About Area Component Styles
    ========================================== */
+
 .about-area {
-  display: flex;
-  margin-top: 35vh;
-  justify-content: center;
+  @apply flex justify-center mt-[35vh];
 }
 
 .about-text {
-  display: flex;
-  padding: 0 10px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  @apply flex px-[10px] flex-col items-center text-center;
 }
 
 .about-text h3 {
-  margin-bottom: 4vh;
-  font-size: 2rem;
+  @apply mb-[4vh] text-3xl;
 }
 
 .about-text p {
-  max-width: 60%;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .about-text p {
-    max-width: 90%;
-  }
+  @apply max-w-[60%] text-2xl md:max-w-[90%];
 }
 
 /* ==========================================
    4. Benefit Area Component Styles
    ========================================== */
+
 .benefit-area {
-  display: none;
-  justify-content: space-around;
-  margin-bottom: 30vh;
+  @apply hidden justify-around mb-[30vh];
 }
 
 .benefit-icon i {
-  background: #fb2812;
-  display: flex;
-  border-radius: 50px;
-  padding: 10px;
-  font-size: 36px;
+  @apply bg-[#fb2812] flex rounded-full p-[10px] text-[36px];
 }
 
 .benefit-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply flex items-center justify-center;
 }
 
 .icon-text {
-  padding: 0px 10px;
+  @apply px-[10px];
 }
 
 .icon-text p {
-  font-size: 1.1rem;
-  font-weight: 500;
+  @apply text-[1.1rem] font-medium;
 }
 
 /* ==========================================
    5. Course Container & Popular Courses Styles
    ========================================== */
+
 .course-container {
-  width: 90%;
-  margin: 25vh auto;
-  padding: 0px 20px;
+  @apply w-[90%] my-[25vh] mx-auto px-[20px] max-md:my-[12vh] max-md:mt-0;
 }
 
 .courses {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  @apply flex justify-between items-center flex-wrap max-md:flex-col max-md:p-[20px];
 }
 
 .course-image {
-  flex: 1;
-  margin-right: 40px;
-  overflow: hidden;
+  @apply flex-1 mr-[40px] overflow-hidden max-md:mr-0 max-md:mb-[20px];
 }
 
 .course-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  @apply w-full h-auto block;
 }
 
 .course-heading h2 {
-  font-size: 2rem;
-  margin-bottom: 5vh;
-  width: 90%;
+  @apply text-3xl mb-[5vh] w-[90%] max-md:w-full;
 }
 
 .course-content {
-  flex: 1;
+  @apply flex-1;
 }
 
 .course-types h2 {
-  width: 90%;
-  font-size: 2rem;
+  @apply w-[90%] text-3xl;
 }
 
 .course {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3vh;
+  @apply flex flex-col mb-[3vh];
 }
 
 .course-icon i {
-  color: #ffffff;
-  text-align: center;
-  background: var(--main-color);
-  padding: 6px 10px;
-  border-radius: 50px;
-  font-size: 32px;
+  @apply text-white text-center bg-(--main-color) px-[10px] py-[6px] rounded-full text-[32px];
 }
 
 .popular-course-container {
-  width: 100%;
-  margin: 20vh auto;
-  padding: 10vh 0;
+  @apply w-full my-[20vh] mx-auto py-[10vh] max-md:m-0;
 }
 
 .popular-course-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply flex flex-col justify-center items-center;
 }
 
 .popular-text {
-  text-align: center;
-  width: 70%;
+  @apply text-center w-[70%] max-md:w-[90%];
 }
 
 .popular-text h2 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  margin-bottom: 3vh;
+  @apply text-[clamp(1.5rem,4vw,3rem)] mb-[3vh];
 }
 
 .popular-text p {
-  text-wrap-style: pretty;
-  overflow-wrap: break-word;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  @apply text-[clamp(1.3rem,3vw,1.8rem)] text-pretty wrap-break-word;
 }
 
 .course-card-area {
-  margin-top: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+  @apply mt-[10vh] flex items-center justify-center w-[90%] max-md:flex-col max-md:gap-[15px];
 }
 
 .course-card {
-  max-width: 100%;
-  margin: 0 10px;
-  padding: 8px 8px;
-  background: #fbfbfb;
-  border-radius: 24px;
-  transition: 0.5s ease;
-  box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.08);
+  @apply max-w-full mx-[10px] p-[8px] bg-[#fbfbfb] rounded-[24px] transition-all duration-500 ease-in-out shadow-[0_4px_6px_rgba(0,0,0,0.1),0_1px_3px_rgba(0,0,0,0.08)] hover:scale-[1.03];
 }
 
 .course-card:hover .card-image img {
-  transform: scale(1.15);
-  filter: brightness(1);
-}
-
-.course-card:hover {
-  transform: scale(1.03);
+  @apply scale-[1.15] brightness-100;
 }
 
 .card-image {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 15px;
+  @apply block w-full overflow-hidden rounded-[15px];
 }
 
 .card-image img {
-  filter: brightness(0.7);
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: 0.5s ease;
+  @apply brightness-[0.7] w-full h-auto block transition-all duration-500 ease-in-out;
 }
 
 .card-content {
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100%;
+  @apply py-[20px] px-[15px] flex flex-col items-center text-center h-full;
 }
 
 .card-content h3 {
-  width: 90%;
-  text-align: center;
-  margin-bottom: 2vh;
+  @apply w-[90%] text-center mb-[2vh];
 }
 
 .content-of-card {
-  margin-top: 2vh;
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
+  @apply mt-[2vh] w-full justify-between flex;
 }
 
 .card-description {
-  text-align: justify;
+  @apply text-justify;
 }
 
 .cta-btn-card {
-  margin-top: 3vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  @apply mt-[3vh] w-full flex justify-between;
 }
 
 .cta-btn-card button {
-  text-align: center;
-  padding: 10px 20px;
-  color: #000;
-  font-size: 1rem;
-}
-
-.cta-btn-card button:hover {
-  cursor: pointer;
+  @apply text-center py-[10px] px-[20px] text-black text-base hover:cursor-pointer;
 }
 
 #buy-now {
-  background: var(--main-color);
-  border-radius: 20px;
+  @apply bg-(--main-color) rounded-[20px];
 }
 
 #add-now {
-  border: 1px solid #000;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 0.3s ease;
+  @apply border border-black rounded-[20px] relative overflow-hidden z-10 transition-colors duration-300 ease-in-out hover:text-white;
 }
 
 #add-now::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--main-color);
-  z-index: -1;
-  transition: transform 0.3s ease;
-  transform: translateX(0);
-}
-
-#add-now:hover {
-  color: #fff;
+  @apply absolute top-0 -left-full w-full h-full bg-(--main-color) -z-10 transition-transform duration-300 ease-in-out translate-x-0;
 }
 
 #add-now:hover::before {
-  transform: translateX(100%);
-}
-
-@media screen and (max-width: 768px) {
-  .courses {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .course-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .course-heading h2 {
-    width: 100%;
-  }
-
-  .course-container {
-    margin: 12vh auto;
-    margin-top: 0;
-  }
-
-  .course-card-area {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .popular-text {
-    width: 90%;
-  }
-
-  .popular-course-container {
-    margin: 0;
-  }
+  @apply translate-x-full;
 }
 
 /* ==========================================
    6. Footer Styles
    ========================================== */
+
 footer {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 25px 30px 15px 25px;
-  background-color: var(--main-color);
-  margin-top: 10vh;
+  @apply flex flex-row flex-wrap pt-[25px] pr-[30px] pb-[15px] pl-[25px] bg-(--main-color) mt-[10vh] max-sm:p-[15px];
 }
 
 .footer > * {
-  flex: 1 100%;
+  @apply flex-1 basis-full;
 }
 
 .footer-left {
-  margin-right: 1.25em;
-  margin-bottom: 2em;
+  @apply mr-[1.25em] mb-[2em] min-[600px]:flex-1 max-md:mr-0;
 }
 
 .footer-logo i {
-  font-size: 28px;
-  margin-right: 5px;
-  color: #fcfcfc;
+  @apply text-[28px] mr-[5px] text-[#fcfcfc];
 }
 
 .footer-logo span {
-  font-size: 28px;
+  @apply text-[28px];
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 17px;
+  @apply font-semibold text-[17px];
 }
 
 .footer ul {
-  list-style: none;
-  padding-left: 0;
+  @apply list-none pl-0;
 }
 
 .footer li {
-  line-height: 2em;
+  @apply leading-[2em];
 }
 
 .footer a {
-  text-decoration: none;
+  @apply no-underline;
 }
 
 .footer-right {
-  display: flex;
-  flex-flow: row wrap;
+  @apply flex flex-row flex-wrap min-[600px]:flex-[2_0_0px];
 }
 
 .footer-right > * {
-  flex: 1 50%;
-  margin-right: 1.25em;
+  @apply flex-1 basis-[50%] mr-[1.25em] min-[600px]:flex-1;
 }
 
 .box a {
-  color: #fcfcfc;
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
-}
-
-.box a:hover {
-  color: #b35043;
-  transform: scale(1.1);
+  @apply text-[#fcfcfc] transition-all duration-300 ease-in-out hover:text-[#b35043] hover:scale-110;
 }
 
 .footer-bottom {
-  text-transform: capitalize;
-  text-align: center;
-  color: #fcfcfc;
-  padding-top: 15vh;
+  @apply capitalize text-center text-[#fcfcfc] pt-[15vh];
 }
 
 .footer-left p {
-  width: 70%;
-  margin-top: 2vh;
-  padding-right: 20%;
-  color: #fcfcfc;
+  @apply w-[70%] mt-[2vh] pr-[20%] text-[#fcfcfc] max-md:pr-0 max-md:w-full;
 }
 
 #developed-by span {
-  color: #b35043;
+  @apply text-[#b35043];
 }
 
 .socials {
-  display: flex;
-  margin-top: 3vh;
+  @apply flex mt-[3vh] max-md:justify-center;
 }
 
 .socials a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
+  @apply w-[40px] h-[40px] flex justify-center items-center mr-[10px];
 }
 
 .socials a i {
-  color: #fcfcfc;
-  padding: 10px 12px;
-  font-size: 20px;
-  transition: 0.3s ease;
-}
-
-.socials a i:hover {
-  color: #b35043;
-}
-
-@media screen and (min-width: 600px) {
-  .footer-right > * {
-    flex: 1;
-  }
-  .footer-left {
-    flex: 1 0px;
-  }
-
-  .footer-right {
-    flex: 2 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer {
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .socials {
-    justify-content: center;
-  }
-  .footer-left p {
-    padding-right: 0;
-    width: 100%;
-  }
-  .footer-left {
-    margin-right: 0;
-  }
+  @apply text-[#fcfcfc] py-[10px] px-[12px] text-[20px] transition-all duration-300 ease-in-out hover:text-[#b35043];
 }
 
 /* ==========================================
    7. Front Banner Styles
    ========================================== */
+
 .front-main-banner-picture {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
+  @apply absolute top-0 right-0 left-0 z-0 w-full;
 }
 
 .front-main-banner-picture img {
-  width: 100%;
-  height: 100vh;
-  filter: brightness(0.75);
-  object-fit: cover;
-  object-position: top center;
+  @apply w-full h-screen brightness-75 object-cover object-top;
 }
 
 .banner-wrapper {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
+  @apply grid place-items-center min-h-screen;
 }
 
 .front-banner-text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 5vh 5vw;
+  @apply relative flex flex-col items-center text-center py-[5vh] px-[5vw];
 }
 
 .front-banner-text h3 {
-  width: 110%;
-  font-size: clamp(2rem, 5vw, 7rem);
-  margin-bottom: 4vh;
-  color: var(--main-color);
+  @apply w-[110%] text-[clamp(2rem,5vw,7rem)] mb-[4vh] text-(--main-color);
 }
 
 #banner-text-span {
-  color: #f3f3f3;
+  @apply text-[#f3f3f3];
 }
 
 .front-banner-text p {
-  max-width: 60%;
-  font-size: clamp(1.5rem, 1.8vw, 3rem);
-  margin-bottom: 12vh;
-  color: #fff;
+  @apply max-w-[60%] text-[clamp(1.5rem,1.8vw,3rem)] mb-[12vh] text-white max-md:hidden max-md:max-w-[90%];
 }
 
 #reserve-your-seat {
-  display: flex;
-  gap: 5px;
-  background-color: var(--main-color);
-  padding: 15px 30px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: clamp(1.1rem, 1.5vw, 3rem);
-  transition: 0.4s ease;
+  @apply flex gap-[5px] bg-(--main-color) py-[15px] px-[30px] rounded-full uppercase font-semibold text-[clamp(1.1rem,1.5vw,3rem)] transition-all duration-400 ease-in-out;
 }
 
 #reserve-your-seat i {
-  display: inline-block;
-  transition: transform 0.3s ease;
+  @apply inline-block transition-transform duration-300 ease-in-out;
 }
 
 #reserve-your-seat:hover i {
-  transform: rotate(45deg);
+  @apply rotate-45;
 }
 
 #schedule-btn {
-  height: 9vh;
-  background: #ffff00;
-  padding: 0 1.5vw;
-  border-radius: 50px;
-  max-width: 100%;
+  @apply h-[9vh] bg-[#ffff00] px-[1.5vw] rounded-full max-w-full;
 }
 
 #schedule-btn a {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .front-banner-text p {
-    display: none;
-    max-width: 90%;
-  }
+  @apply uppercase font-medium text-[1.2rem];
 }
 
 /* ==========================================
    8. Tutor Container Styles
    ========================================== */
+
 .tutor-container {
-  display: flex;
-  width: 100%;
+  @apply flex w-full;
 }
 
 .tutor-area {
-  padding: 0 5vw;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply px-[5vw] w-full flex justify-center items-center max-md:flex-col max-md:mt-[15vh];
 }
 
 .tutor-content {
-  width: 100%;
+  @apply w-full max-md:w-[90%];
 }
 
 .info-text {
-  display: flex;
-  flex-direction: column;
+  @apply flex flex-col;
 }
 
 .info-text h3 {
-  width: 100%;
-  text-transform: capitalize;
-  font-size: clamp(1.5rem, 2.3vw, 3rem);
-  margin-bottom: 2vh;
+  @apply w-full capitalize text-[clamp(1.5rem,2.3vw,3rem)] mb-[2vh];
 }
 
 .info-text h3 span {
-  color: var(--main-color);
+  @apply text-(--main-color);
 }
 
 .info-text p {
-  text-align: justify;
-  font-size: clamp(1.3rem, 1.2vw, 1.8rem);
+  @apply text-justify text-[clamp(1.3rem,1.2vw,1.8rem)];
 }
 
 .tutor-benefits h3 {
-  margin: 4vh 0px;
-  font-size: clamp(1.5rem, 2.3vw, 3rem);
+  @apply my-[4vh] text-[clamp(1.5rem,2.3vw,3rem)] max-md:mt-[8vh];
 }
 
 .tutor-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10vw;
-  padding: 0 20px;
+  @apply flex justify-between items-center gap-[10vw] px-[20px] max-md:mb-[10vh] max-[425px]:gap-[24vw];
 }
 
 .tutor-li li {
-  padding: 5px 0;
-  width: 90%;
-  font-size: clamp(1.2rem, 1.2vw, 3rem);
-  list-style: disc;
+  @apply py-[5px] w-[90%] text-[clamp(1.2rem,1.2vw,3rem)] list-disc;
 }
 
 .tutor-image {
-  margin-left: 30px;
-  overflow: hidden;
+  @apply ml-[30px] overflow-hidden max-md:m-0;
 }
 
 .tutor-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  @apply w-full h-auto block;
 }
 
 .tutor-btn {
-  display: flex;
+  @apply flex max-md:justify-center;
 }
 
 #become-an-instructor {
-  background: var(--main-color);
-  padding: 15px 30px;
-  border-radius: 50px;
-  transition: 0.3s ease;
-  font-size: 1.3rem;
-  text-transform: capitalize;
-  margin: 5vh 0;
+  @apply bg-(--main-color) py-[15px] px-[30px] rounded-full transition-all duration-300 ease-in-out text-[1.3rem] capitalize my-[5vh] hover:scale-110;
 }
 
-#become-an-instructor:hover {
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-  .tutor-area {
-    flex-direction: column;
-    margin-top: 15vh;
-  }
-
-  .tutor-li {
-    margin-bottom: 10vh;
-  }
-
-  .tutor-benefits h3 {
-    margin-top: 8vh;
-  }
-
-  .tutor-content {
-    width: 90%;
-  }
-
-  .tutor-btn {
-    justify-content: center;
-  }
-
-  .tutor-image {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .tutor-li {
-    gap: 24vw;
-  }
-}
-
-/* Hero Section */
-:root {
-  --primary-orange: #ff9f43;
-  --primary-purple: #6c5ce7;
-  --text-dark: #1e272e;
-  --text-muted: #636e72;
-  --bg-light: #f8f9fa;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  /* font-family: 'Inter', system-ui, -apple-system, sans-serif; */
-}
+/* ==========================================
+   9. Hero Section Styles
+   ========================================== */
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  min-height: 100vh;
-  gap: 40px;
+  @apply flex items-center justify-between max-w-[1200px] my-0 mx-auto px-[20px] min-h-screen gap-[40px] max-md:flex-col max-md:text-center max-md:pt-[60px];
 }
 
-/* Left Content Styles */
 .hero-content {
-  flex: 1;
-  max-width: 550px;
-  position: relative;
+  @apply flex-1 max-w-[550px] relative max-md:max-w-full;
 }
 
 .decorative-doodle {
-  position: absolute;
-  top: -30px;
-  left: -40px;
+  @apply absolute top-[30px] left-[40px] max-md:hidden;
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--text-dark);
-  line-height: 1.2;
-  margin-bottom: 20px;
+  @apply text-[3rem] font-extrabold text-(--text-dark) leading-[1.2] mb-[20px] max-md:text-[2.3rem] max-[480px]:text-[1.8rem];
 }
 
 .hero-title .highlight {
-  color: var(--main-color);
-  position: relative;
-  display: inline-block;
+  @apply text-(--main-color) relative inline-block;
 }
 
-/* Subtle orange underline under "Success" */
 .hero-title .highlight::after {
   content: "";
-  position: absolute;
-  bottom: 6px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: var(--main-color);
-  border-radius: 2px;
+  @apply absolute bottom-[6px] left-0 w-full h-[3px] bg-(--main-color) rounded-[2px];
 }
 
 .hero-description {
-  font-size: 1rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 30px;
+  @apply text-base text-(--text-muted) leading-[1.6] mb-[30px];
 }
 
-/* Subscribe Input Container */
 .subscribe-box {
-  display: flex;
-  align-items: center;
-  background-color: var(--bg-light);
-  border: 1px solid #e1e8ed;
-  border-radius: 50px;
-  padding: 6px 8px 6px 20px;
-  margin-bottom: 35px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  @apply flex items-center bg-(--bg-light) border border-[#e1e8ed] rounded-full pt-[6px] pr-[8px] pb-[6px] pl-[20px] mb-[35px] shadow-[0_4px_15px_rgba(0,0,0,0.03)] max-md:max-w-[450px] max-md:mx-auto max-[480px]:flex-col max-[480px]:rounded-[16px] max-[480px]:p-[12px] max-[480px]:gap-[10px];
 }
 
 .input-group {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  gap: 10px;
+  @apply flex items-center flex-1 gap-[10px] max-[480px]:w-full max-[480px]:p-[5px];
 }
 
 .email-icon {
-  font-size: 1.1rem;
-  opacity: 0.5;
+  @apply text-[1.1rem] opacity-50;
 }
 
 .input-group input {
-  border: none;
-  background: transparent;
-  outline: none;
-  width: 100%;
-  font-size: 0.95rem;
-  color: var(--text-dark);
-}
-
-.input-group input::placeholder {
-  color: #a4b0be;
+  @apply border-none bg-transparent outline-none w-full text-[0.95rem] text-(--text-dark) placeholder-[#a4b0be];
 }
 
 .subscribe-btn {
-  background-color: var(--cta-btns);
-  color: #fff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 40px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
+  @apply bg-(--cta-btns) text-white border-none py-[14px] px-[28px] rounded-[40px] font-semibold cursor-pointer transition-colors duration-200 ease-in-out whitespace-nowrap hover:bg-[#e56155] max-[480px]:w-full max-[480px]:rounded-[12px];
 }
 
-.subscribe-btn:hover {
-  background-color: #e56155;
-}
-
-/* Reviews Section */
 .reviews-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  @apply flex items-center gap-[15px] max-md:justify-center;
 }
 
 .avatar-group {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
 }
 
 .avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin-right: -10px;
-  object-fit: cover;
+  @apply w-[44px] h-[44px] rounded-full border-2 border-white mr-[10px] object-cover;
 }
 
 .rating-badge {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--primary-orange);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.85rem;
-  gap: 2px;
-  border: 2px solid #fff;
+  @apply w-[44px] h-[44px] rounded-full bg-(--primary-orange) text-white flex items-center justify-center font-bold text-[0.85rem] gap-[2px] border-2 border-white;
 }
 
 .reviews-text h4 {
-  font-size: 1rem;
-  color: var(--text-dark);
-  font-weight: 700;
+  @apply text-base text-(--text-dark) font-bold;
 }
 
 .reviews-text p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  @apply text-[0.85rem] text-(--text-muted);
 }
 
-/* Right Image Section */
 .hero-image-wrapper {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply flex-1 relative flex justify-center items-center;
 }
 
-/* Circular Dotted Background */
 .dots-pattern {
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background-image: radial-gradient(
-    var(--primary-orange) 1.5px,
-    transparent 1.5px
-  );
+  @apply absolute w-[380px] h-[380px] rounded-full opacity-35 z-10 max-md:w-[280px] max-md:h-[280px];
+  background-image: radial-gradient(var(--primary-orange) 1.5px, transparent 1.5px);
   background-size: 16px 16px;
-  opacity: 0.35;
-  z-index: 1;
 }
 
 .hero-img {
-  position: relative;
-  z-index: 2;
-  max-width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: contain;
-}
-
-/* Responsive Styles */
-@media (max-width: 900px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 60px;
-  }
-
-  .decorative-doodle {
-    display: none;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero-title {
-    font-size: 2.3rem;
-  }
-
-  .subscribe-box {
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .reviews-container {
-    justify-content: center;
-  }
-
-  .dots-pattern {
-    width: 280px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 1.8rem;
-  }
-
-  .subscribe-box {
-    flex-direction: column;
-    border-radius: 16px;
-    padding: 12px;
-    gap: 10px;
-  }
-
-  .input-group {
-    width: 100%;
-    padding: 5px;
-  }
-
-  .subscribe-btn {
-    width: 100%;
-    border-radius: 12px;
-  }
+  @apply relative z-20 max-w-full h-auto max-h-[520px] object-contain;
 }
