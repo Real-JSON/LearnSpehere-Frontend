@@ -82,7 +82,7 @@ img {
    ========================================== */
 
 .about-area {
-  @apply flex justify-center mt-[35vh];
+  @apply flex justify-center mt-[25vh];
 }
 
 .about-text {
@@ -90,11 +90,11 @@ img {
 }
 
 .about-text h3 {
-  @apply mb-[4vh] text-3xl;
+  @apply mb-[4vh] text-3xl font-bold;
 }
 
 .about-text p {
-  @apply max-w-[60%] text-2xl md:max-w-[90%];
+  @apply max-w-[60%] text-2xl;
 }
 
 /* ==========================================
@@ -161,6 +161,14 @@ img {
   @apply text-white text-center bg-(--main-color) px-2.5 py-1.5 rounded-full text-[32px];
 }
 
+.course-name {
+  @apply mt-2
+}
+
+.course-name h3 {
+  @apply font-bold
+}
+
 .popular-course-container {
   @apply w-full my-[20vh] mx-auto py-[10vh] max-md:m-0;
 }
@@ -206,7 +214,7 @@ img {
 }
 
 .card-content h3 {
-  @apply w-[90%] text-center mb-[2vh];
+  @apply w-[90%] text-center mb-[2vh] font-bold md:text-xl;
 }
 
 .content-of-card {
@@ -391,7 +399,7 @@ h2 {
 }
 
 .info-text h3 {
-  @apply w-full capitalize text-[clamp(1.5rem,2.3vw,3rem)] mb-[2vh];
+  @apply w-full capitalize text-[clamp(1.5rem,2.3vw,3rem)] mb-[2vh] font-bold;
 }
 
 .info-text h3 span {
@@ -403,7 +411,7 @@ h2 {
 }
 
 .tutor-benefits h3 {
-  @apply my-[4vh] text-[clamp(1.5rem,2.3vw,3rem)] max-md:mt-[8vh];
+  @apply my-[4vh] text-[clamp(1.5rem,2.3vw,3rem)] max-md:mt-[8vh] font-bold;
 }
 
 .tutor-li {
