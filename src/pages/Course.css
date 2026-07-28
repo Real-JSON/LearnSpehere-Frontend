@@ -1,0 +1,362 @@
+@import "tailwindcss";
+
+/* --- Theme Declarations (Replaces :root) --- */
+@theme {
+  --color-primary-color: #ff6b5e;
+  --color-secondary-color: #fe9f00;
+  --color-text-main: #333333;
+  --color-text-muted: #666666;
+  --color-bg-light: #f5f7fa;
+  --color-border-color: #e2e8f0;
+  --color-navy-dark: #1a1d3a;
+  --color-footer-bg: #0a0d22;
+  --color-footer-bottom: #050711;
+
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+/* --- Base Body Styles --- */
+@layer base {
+  body {
+    @apply m-0 font-[family-name:var(--font-poppins)] bg-white text-text-main overflow-x-hidden;
+  }
+}
+
+/* --- Layout Utility --- */
+.container {
+  @apply max-w-[1200px] mx-auto px-[15px] w-full box-border;
+}
+
+/* --- Header & Top Bar --- */
+.header .top-bar {
+  @apply bg-primary-color text-white py-2.5 text-sm;
+}
+
+.header .top-bar .container {
+  @apply flex justify-center sm:justify-between items-center flex-wrap gap-2.5;
+}
+
+.contact-info {
+  @apply flex gap-5 w-full sm:w-auto justify-center;
+}
+
+.top-links {
+  @apply flex items-center gap-[15px] w-full sm:w-auto justify-center;
+}
+
+.social-links {
+  @apply flex gap-[10px];
+}
+
+.social-links i {
+  @apply cursor-pointer;
+}
+
+/* --- Main Nav --- */
+.main-nav {
+  @apply py-[15px] bg-white border-b border-border-color;
+}
+
+.main-nav .container {
+  @apply flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center gap-[15px] sm:gap-0;
+}
+
+.main-nav .logo {
+  @apply h-[40px];
+}
+
+.nav-links {
+  @apply hidden md:flex list-none gap-[25px] m-0 p-0 font-medium;
+}
+
+.nav-links li {
+  @apply cursor-pointer;
+}
+
+.nav-links li.active {
+  @apply text-primary-color;
+}
+
+.nav-links i {
+  @apply text-[12px] ml-[3px];
+}
+
+.nav-actions {
+  @apply flex items-center gap-[10px] sm:gap-[20px] text-[18px];
+}
+
+.cart-icon {
+  @apply relative;
+}
+
+.cart-count {
+  @apply absolute -top-[8px] -right-[10px] bg-secondary-color text-white text-[10px] rounded-full px-[5px] py-[2px];
+}
+
+.enroll-nav-btn {
+  @apply bg-primary-color text-white border-none py-2 px-3 sm:py-[10px] sm:px-[20px] rounded-[5px] cursor-pointer font-medium text-xs sm:text-base;
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb-section {
+  @apply bg-bg-light py-[60px] text-center;
+}
+
+.breadcrumb-section h1 {
+  @apply m-0 mb-[10px] text-[28px] sm:text-[36px] text-navy-dark font-bold;
+}
+
+.breadcrumb-section .current {
+  @apply text-primary-color;
+}
+
+/* --- Main Content Grid --- */
+.main-content {
+  @apply grid grid-cols-1 md:grid-cols-[280px_1fr] gap-[30px] py-[40px] md:py-[80px] px-[15px] max-w-[1200px] mx-auto w-full box-border;
+}
+
+/* --- Filter Section --- */
+.filter-section {
+  @apply bg-white p-[20px] border border-border-color rounded-[10px];
+}
+
+.filter-group {
+  @apply mb-[25px];
+}
+
+.filter-title {
+  @apply m-0 mb-[15px] text-[18px] text-navy-dark relative pb-[10px] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-[2px] after:bg-primary-color;
+}
+
+.filter-list {
+  @apply list-none m-0 p-0;
+}
+
+.filter-item {
+  @apply mb-[12px] flex items-center;
+}
+
+.filter-container {
+  @apply flex justify-between;
+}
+
+.checkbox-filter {
+  @apply flex items-center gap-[10px] w-full cursor-pointer text-[15px] text-text-main;
+}
+
+.checkbox-filter .count {
+  @apply ml-auto text-text-muted;
+}
+
+.rating-filter label i {
+  @apply text-text-muted mr-[2px];
+}
+
+.rating-filter label i.filled {
+  @apply text-secondary-color;
+}
+
+/* --- Course Grid & Header --- */
+.grid-header {
+  @apply flex justify-center sm:justify-between items-center mb-[30px] flex-wrap gap-[15px];
+}
+
+.results-count {
+  @apply text-text-muted m-0;
+}
+
+.grid-controls {
+  @apply flex items-center gap-[10px];
+}
+
+.sort-select {
+  @apply py-[8px] px-[15px] border border-border-color rounded-[5px] outline-none;
+}
+
+.grid-view-btn, .list-view-btn {
+  @apply bg-transparent border border-border-color py-[8px] px-[10px] rounded-[5px] cursor-pointer text-text-muted;
+}
+
+.grid-view-btn.active {
+  @apply bg-primary-color text-white border-primary-color;
+}
+
+.course-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px];
+}
+
+/* --- Course Card --- */
+.course-card {
+  @apply bg-white border border-border-color rounded-[10px] overflow-hidden transition-shadow duration-300 ease-in-out hover:shadow-[0_10px_25px_rgba(0,0,0,0.1)];
+}
+
+.card-image-wrapper {
+  @apply relative h-[200px];
+}
+
+.course-image {
+  @apply w-full h-full object-cover;
+}
+
+.category-badge {
+  @apply absolute top-[15px] left-[15px] bg-white/80 text-primary-color px-[12px] py-[5px] rounded-[20px] text-[12px] font-semibold;
+}
+
+.wishlist-btn {
+  @apply absolute top-[15px] right-[15px] bg-white/80 border-none rounded-full w-[35px] h-[35px] flex items-center justify-center text-[#FF5A5F] cursor-pointer;
+}
+
+.card-content {
+  @apply p-[20px];
+}
+
+.author-info {
+  @apply flex items-center gap-[10px] mb-[15px] text-[14px];
+}
+
+.author-image {
+  @apply w-[30px] h-[30px] rounded-full object-cover;
+}
+
+.course-title {
+  @apply m-0 mb-[15px] text-[18px] text-navy-dark leading-[1.4] h-[50px] overflow-hidden line-clamp-2;
+}
+
+.course-meta {
+  @apply flex justify-between text-[14px] text-text-muted mb-[20px];
+}
+
+.card-footer {
+  @apply border-t border-border-color pt-[20px];
+}
+
+.rating-students {
+  @apply flex justify-between items-center mb-[15px] text-[14px];
+}
+
+.rating {
+  @apply text-secondary-color;
+}
+
+.students {
+  @apply text-text-muted;
+}
+
+.price-enroll {
+  @apply flex justify-between items-center;
+}
+
+.price {
+  @apply text-[20px] font-bold text-navy-dark;
+}
+
+.original-price {
+  @apply text-[14px] text-text-muted line-through ml-[5px];
+}
+
+.enroll-btn {
+  @apply bg-primary-color text-white border-none py-[8px] px-[18px] rounded-[5px] cursor-pointer font-medium text-[14px] ml-1.5;
+}
+
+/* --- Pagination --- */
+.pagination {
+  @apply flex justify-center gap-[10px] mt-[50px];
+}
+
+.pagination button {
+  @apply bg-white border border-border-color py-[10px] px-[15px] rounded-[5px] cursor-pointer;
+}
+
+.pagination button.active {
+  @apply bg-primary-color text-white border-primary-color;
+}
+
+/* --- Newsletter --- */
+.newsletter-section {
+  @apply bg-primary-color bg-[url('https://i.ibb.co/3WfK5nL/newsletter-bg.png')] bg-cover py-[60px] px-[15px] text-white -mt-[30px];
+}
+
+.newsletter-section .container {
+  @apply flex justify-center md:justify-between items-center flex-wrap gap-[20px] text-center md:text-left;
+}
+
+.newsletter-text .subtitle {
+  @apply text-secondary-color font-semibold;
+}
+
+.newsletter-text h2 {
+  @apply m-0 mt-[10px] text-[32px] font-bold;
+}
+
+.newsletter-form {
+  @apply flex bg-white p-[5px] rounded-[50px] w-full max-w-[500px];
+}
+
+.newsletter-form input {
+  @apply border-none p-[15px] rounded-[50px] grow outline-none text-text-main;
+}
+
+.newsletter-form button {
+  @apply bg-primary-color text-white border-none rounded-[50px] px-[25px] cursor-pointer font-medium;
+}
+
+/* --- Footer --- */
+.footer {
+  @apply bg-footer-bg text-white/80 pt-[80px] px-[15px] pb-0 text-[15px];
+}
+
+.footer-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] lg:gap-[40px] pb-[50px];
+}
+
+.footer h4 {
+  @apply text-white m-0 mb-[20px] text-[18px];
+}
+
+.footer-brand p {
+  @apply mb-[25px] leading-[1.7];
+}
+
+.social-icons {
+  @apply flex gap-[10px];
+}
+
+.social-icons button {
+  @apply bg-navy-dark text-white/60 border-none w-[40px] h-[40px] rounded-full cursor-pointer flex items-center justify-center;
+}
+
+.footer-links ul {
+  @apply list-none m-0 p-0;
+}
+
+.footer-links li {
+  @apply mb-[15px] cursor-pointer hover:text-white;
+}
+
+.footer-email-form {
+  @apply bg-white rounded-[5px] flex overflow-hidden mt-[15px];
+}
+
+.footer-email-form input {
+  @apply p-[15px] border-none grow outline-none text-text-main;
+}
+
+.footer-email-form button {
+  @apply bg-primary-color text-white border-none px-[15px] cursor-pointer;
+}
+
+.footer-bottom {
+  @apply border-t border-white/10 py-[20px] bg-footer-bottom;
+}
+
+.footer-bottom .container {
+  @apply flex flex-col sm:flex-row justify-between items-center text-[14px] gap-2.5 sm:gap-0;
+}
+
+.footer-bottom p {
+  @apply m-0;
+}
+
+.footer-bottom-links {
+  @apply flex gap-[20px];
+}

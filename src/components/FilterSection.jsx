@@ -79,8 +79,10 @@ const FilterSection = () => {
                         filter.items.map((item, idx) => (
                             <li key={idx} className="filter-item">
                                 <input type="checkbox" name="" id={`${filter.title}-${idx}`} />
-                                <label htmlFor={`${filter.title}-${idx}`}>{item.name}</label>
-                                <span className="count">({item.count})</span>
+                                 <div className="filter-container">
+                                  <label htmlFor={`${filter.title}-${idx}`}>{item.name}</label>
+                                  <span className="count">({item.count})</span>
+                                </div>
                             </li>
                         ))
                     )}

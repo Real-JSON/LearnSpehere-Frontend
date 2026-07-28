@@ -1,12 +1,18 @@
 import React from "react";
+
+import "./Course.css";
+
 import Footer from "../components/Footer";
 import FilterSection from "../components/FilterSection";
 import courseData from "../data/courseData";
 import CourseCard from "../components/CourseCard";
+import Navbar from "../components/Navbar";
 
 const Course = () => {
   return (
     <>
+      <Navbar/>
+
       <div className="breadcrumb-section">
         <div className="container">
           <h1>Courses</h1>
@@ -18,7 +24,7 @@ const Course = () => {
 
       <main className="main-content container">
         {/* FilterSection component */}
-        <FilterSection/>
+        <FilterSection />
         <section className="course-grid-container">
           <div className="grid-header">
             <p>Showing Results 1-8 of 24 results</p>
@@ -38,8 +44,8 @@ const Course = () => {
 
           <div className="course-grid">
             {/* Render course data using CourseCard component*/}
-            {courseData.map(course => (
-                <CourseCard key={course.id} course={course} />
+            {courseData.map((course) => (
+              <CourseCard key={course.id} course={course} />
             ))}
           </div>
 
