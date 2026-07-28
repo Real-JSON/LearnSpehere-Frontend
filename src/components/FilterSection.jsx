@@ -1,5 +1,6 @@
 import React from "react";
 
+// Filter configuration data containing both text-based categories and rating options
 const filters = [
   {
     title: "Categories",
@@ -21,7 +22,7 @@ const filters = [
   { 
     title: "Ratings", 
     type: "rating", 
-    items: [5, 4, 3, 2]
+    items: [5, 4, 3, 2] // Represents star values (5 stars, 4 stars, etc.)
   },
   {
     title: "Price",
@@ -54,12 +55,15 @@ const filters = [
 const FilterSection = () => {
   return (
     <aside className="filter-section">
+        {/* Loop through main filter group (Categories, Ratings, Price, etc.) */}
         {filters.map((filter, index) => (
             <div key={index} className="filter-group">
                 <h4 className="filter-title">{filter.title}</h4>
                 <ul className="filter-list">
+                    {/* Conditional Check: Render star UI if filter type is "rating", otherwise render checkboxes with labels */}
                     {filter.type === "rating" ? (
-                        filter.items.map((item, idx) => {
+                        // Loop specifically for rating items
+                        filter.items.map((item, idx) => (
                             <li key={idx} className="filter-item">
                                 <div className="rating-filter">
                                     <input type="checkbox" name="" id={`${filter.title}-${idx}`} />
@@ -69,13 +73,14 @@ const FilterSection = () => {
                                     </label>
                                 </div>
                             </li>
-                        })
+                        ))
                     ) : (
+                        // Loop specifically for regular category items
                         filter.items.map((item, idx) => (
                             <li key={idx} className="filter-item">
                                 <input type="checkbox" name="" id={`${filter.title}-${idx}`} />
                                 <label htmlFor={`${filter.title}-${idx}`}>{item.name}</label>
-                                <span className="coun">({item.count})</span>
+                                <span className="count">({item.count})</span>
                             </li>
                         ))
                     )}
