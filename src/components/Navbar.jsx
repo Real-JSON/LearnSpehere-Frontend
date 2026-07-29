@@ -12,11 +12,10 @@ export default function ModernNavbar() {
     <header className="site-header">
       <div className="header-container">
         {/* Logo */}
-        <a href="#home" className="logo" onClick={closeMenu}>
+        <Link to="/" className="logo" onClick={closeMenu}>
           <i className="ri-donut-chart-fill"></i>
           <span>LearnSphere</span>
-        </a>
-
+        </Link>
         {/* Mobile Backdrop Overlay */}
         <div
           className={`nav-overlay ${isMenuOpen ? "active" : ""}`}
@@ -37,9 +36,9 @@ export default function ModernNavbar() {
           {/* Navigation Links */}
           <ul className="nav-list">
             <li>
-              <a href="#home" className="nav-link active" onClick={closeMenu}>
+              <Link to="/" className="nav-link" onClick={closeMenu}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#about" className="nav-link" onClick={closeMenu}>

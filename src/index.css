@@ -307,7 +307,7 @@ h2 {
 }
 
 .footer-left p {
-  @apply w-[70%] mt-[2vh] pr-[20%] text-[#fcfcfc] max-md:pr-0 max-md:w-full;
+  @apply sm:w-[70%] md:w-full mt-[2vh] pr-[20%] text-[#fcfcfc] max-md:pr-0 max-md:w-full;
 }
 
 #developed-by span {

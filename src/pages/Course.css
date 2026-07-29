@@ -99,7 +99,7 @@
 
 /* --- Breadcrumb --- */
 .breadcrumb-section {
-  @apply bg-bg-light py-[60px] text-center;
+  @apply bg-primary-color py-15 text-center text-white;
 }
 
 .breadcrumb-section h1 {
@@ -107,7 +107,7 @@
 }
 
 .breadcrumb-section .current {
-  @apply text-primary-color;
+  @apply text-text-main font-bold;
 }
 
 /* --- Main Content Grid --- */
@@ -187,7 +187,7 @@
 
 /* --- Course Card --- */
 .course-card-c {
-  @apply bg-white border border-border-color rounded-[10px] overflow-hidden transition-shadow duration-300 ease-in-out hover:shadow-[0_10px_25px_rgba(0,0,0,0.1)];
+  @apply bg-white border border-border-color rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_10px_25px_rgba(0,0,0,0.1)] hover:scale-102;
 }
 
 .card-image-wrapper {
@@ -273,31 +273,31 @@
 
 /* --- Newsletter --- */
 .newsletter-section {
-  @apply bg-[#e05f53] py-[60px] px-[15px] text-white;
+  @apply bg-primary-color py-15 px-3.75 text-white overflow-hidden;
 }
 
 .newsletter-section .container {
-  @apply flex justify-center md:justify-between items-center flex-wrap gap-[20px] text-center md:text-left;
+  @apply flex justify-center md:justify-between items-center flex-wrap gap-5 text-center md:text-left;
 }
 
 .newsletter-text .subtitle {
-  @apply text-secondary-color font-semibold;
+  @apply text-black font-semibold;
 }
 
 .newsletter-text h2 {
-  @apply m-0 mt-[10px] text-[32px] font-bold;
+  @apply m-0 mt-2.5 text-[24px] sm:text-[32px] font-bold;
 }
 
 .newsletter-form {
-  @apply flex bg-white p-[5px] rounded-[50px] w-full max-w-[500px];
+  @apply flex flex-col sm:flex-row bg-white p-1.25 rounded-[25px] sm:rounded-[50px] w-full max-w-125 gap-2 sm:gap-0;
 }
 
 .newsletter-form input {
-  @apply border-none p-[15px] rounded-[50px] grow outline-none text-text-main;
+  @apply border-none p-3 sm:p-3.75 rounded-[50px] grow min-w-0 outline-none text-text-main text-sm sm:text-base;
 }
 
 .newsletter-form button {
-  @apply bg-primary-color text-white border-none rounded-[50px] px-[25px] cursor-pointer font-medium;
+  @apply bg-primary-color text-white border-none rounded-[50px] px-5 py-3 sm:py-3.75 cursor-pointer font-medium whitespace-nowrap text-sm sm:text-base shrink-0;
 }
 
 footer {
