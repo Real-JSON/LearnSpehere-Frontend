@@ -191,7 +191,7 @@
 }
 
 .card-image-wrapper {
-  @apply relative h-[200px];
+  @apply relative h-65;
 }
 
 .course-image {

@@ -47,9 +47,9 @@ export default function ModernNavbar() {
               </a>
             </li>
             <li>
-              <a href="#courses" className="nav-link" onClick={closeMenu}>
+              <Link to="/courses" className="nav-link" onClick={closeMenu}>
                 Courses
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#tutor" className="nav-link" onClick={closeMenu}>
