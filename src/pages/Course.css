@@ -136,16 +136,16 @@
   @apply mb-[12px] flex items-center;
 }
 
-.filter-container {
-  @apply flex justify-between;
-}
-
 .checkbox-filter {
   @apply flex items-center gap-[10px] w-full cursor-pointer text-[15px] text-text-main;
 }
 
 .checkbox-filter .count {
   @apply ml-auto text-text-muted;
+}
+
+.rating-filter label {
+  @apply ml-2.5;
 }
 
 .rating-filter label i {
@@ -182,11 +182,11 @@
 }
 
 .course-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px];
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[30px];
 }
 
 /* --- Course Card --- */
-.course-card {
+.course-card-c {
   @apply bg-white border border-border-color rounded-[10px] overflow-hidden transition-shadow duration-300 ease-in-out hover:shadow-[0_10px_25px_rgba(0,0,0,0.1)];
 }
 
@@ -202,11 +202,11 @@
   @apply absolute top-[15px] left-[15px] bg-white/80 text-primary-color px-[12px] py-[5px] rounded-[20px] text-[12px] font-semibold;
 }
 
-.wishlist-btn {
+.whishlist-button {
   @apply absolute top-[15px] right-[15px] bg-white/80 border-none rounded-full w-[35px] h-[35px] flex items-center justify-center text-[#FF5A5F] cursor-pointer;
 }
 
-.card-content {
+.course-card-content {
   @apply p-[20px];
 }
 
@@ -219,7 +219,7 @@
 }
 
 .course-title {
-  @apply m-0 mb-[15px] text-[18px] text-navy-dark leading-[1.4] h-[50px] overflow-hidden line-clamp-2;
+  @apply m-0 mb-[15px] text-[18px] text-navy-dark leading-[1.4] h-[50px] overflow-hidden line-clamp-2 font-bold;
 }
 
 .course-meta {
@@ -273,7 +273,7 @@
 
 /* --- Newsletter --- */
 .newsletter-section {
-  @apply bg-primary-color bg-[url('https://i.ibb.co/3WfK5nL/newsletter-bg.png')] bg-cover py-[60px] px-[15px] text-white -mt-[30px];
+  @apply bg-[#e05f53] py-[60px] px-[15px] text-white;
 }
 
 .newsletter-section .container {
@@ -300,63 +300,6 @@
   @apply bg-primary-color text-white border-none rounded-[50px] px-[25px] cursor-pointer font-medium;
 }
 
-/* --- Footer --- */
-.footer {
-  @apply bg-footer-bg text-white/80 pt-[80px] px-[15px] pb-0 text-[15px];
-}
-
-.footer-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] lg:gap-[40px] pb-[50px];
-}
-
-.footer h4 {
-  @apply text-white m-0 mb-[20px] text-[18px];
-}
-
-.footer-brand p {
-  @apply mb-[25px] leading-[1.7];
-}
-
-.social-icons {
-  @apply flex gap-[10px];
-}
-
-.social-icons button {
-  @apply bg-navy-dark text-white/60 border-none w-[40px] h-[40px] rounded-full cursor-pointer flex items-center justify-center;
-}
-
-.footer-links ul {
-  @apply list-none m-0 p-0;
-}
-
-.footer-links li {
-  @apply mb-[15px] cursor-pointer hover:text-white;
-}
-
-.footer-email-form {
-  @apply bg-white rounded-[5px] flex overflow-hidden mt-[15px];
-}
-
-.footer-email-form input {
-  @apply p-[15px] border-none grow outline-none text-text-main;
-}
-
-.footer-email-form button {
-  @apply bg-primary-color text-white border-none px-[15px] cursor-pointer;
-}
-
-.footer-bottom {
-  @apply border-t border-white/10 py-[20px] bg-footer-bottom;
-}
-
-.footer-bottom .container {
-  @apply flex flex-col sm:flex-row justify-between items-center text-[14px] gap-2.5 sm:gap-0;
-}
-
-.footer-bottom p {
-  @apply m-0;
-}
-
-.footer-bottom-links {
-  @apply flex gap-[20px];
+footer {
+  @apply -mt-2.5
 }

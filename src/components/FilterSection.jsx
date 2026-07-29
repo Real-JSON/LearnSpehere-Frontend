@@ -78,11 +78,11 @@ const FilterSection = () => {
                         // Loop specifically for regular category items
                         filter.items.map((item, idx) => (
                             <li key={idx} className="filter-item">
+                              <div className="checkbox-filter">
                                 <input type="checkbox" name="" id={`${filter.title}-${idx}`} />
-                                 <div className="filter-container">
-                                  <label htmlFor={`${filter.title}-${idx}`}>{item.name}</label>
-                                  <span className="count">({item.count})</span>
-                                </div>
+                                <label htmlFor={`${filter.title}-${idx}`}>{item.name}</label>
+                                <span className="count">({item.count})</span>
+                              </div>
                             </li>
                         ))
                     )}
