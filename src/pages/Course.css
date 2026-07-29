@@ -99,7 +99,7 @@
 
 /* --- Breadcrumb --- */
 .breadcrumb-section {
-  @apply bg-bg-light py-[60px] text-center;
+  @apply bg-primary-color py-15 text-center text-white;
 }
 
 .breadcrumb-section h1 {
@@ -107,7 +107,7 @@
 }
 
 .breadcrumb-section .current {
-  @apply text-primary-color;
+  @apply text-text-main font-bold;
 }
 
 /* --- Main Content Grid --- */
@@ -136,16 +136,16 @@
   @apply mb-[12px] flex items-center;
 }
 
-.filter-container {
-  @apply flex justify-between;
-}
-
 .checkbox-filter {
   @apply flex items-center gap-[10px] w-full cursor-pointer text-[15px] text-text-main;
 }
 
 .checkbox-filter .count {
   @apply ml-auto text-text-muted;
+}
+
+.rating-filter label {
+  @apply ml-2.5;
 }
 
 .rating-filter label i {
@@ -182,16 +182,16 @@
 }
 
 .course-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px];
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[30px];
 }
 
 /* --- Course Card --- */
-.course-card {
-  @apply bg-white border border-border-color rounded-[10px] overflow-hidden transition-shadow duration-300 ease-in-out hover:shadow-[0_10px_25px_rgba(0,0,0,0.1)];
+.course-card-c {
+  @apply bg-white border border-border-color rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_10px_25px_rgba(0,0,0,0.1)] hover:scale-102;
 }
 
 .card-image-wrapper {
-  @apply relative h-[200px];
+  @apply relative h-65;
 }
 
 .course-image {
@@ -202,11 +202,11 @@
   @apply absolute top-[15px] left-[15px] bg-white/80 text-primary-color px-[12px] py-[5px] rounded-[20px] text-[12px] font-semibold;
 }
 
-.wishlist-btn {
+.whishlist-button {
   @apply absolute top-[15px] right-[15px] bg-white/80 border-none rounded-full w-[35px] h-[35px] flex items-center justify-center text-[#FF5A5F] cursor-pointer;
 }
 
-.card-content {
+.course-card-content {
   @apply p-[20px];
 }
 
@@ -219,7 +219,7 @@
 }
 
 .course-title {
-  @apply m-0 mb-[15px] text-[18px] text-navy-dark leading-[1.4] h-[50px] overflow-hidden line-clamp-2;
+  @apply m-0 mb-[15px] text-[18px] text-navy-dark leading-[1.4] h-[50px] overflow-hidden line-clamp-2 font-bold;
 }
 
 .course-meta {
@@ -273,90 +273,33 @@
 
 /* --- Newsletter --- */
 .newsletter-section {
-  @apply bg-primary-color bg-[url('https://i.ibb.co/3WfK5nL/newsletter-bg.png')] bg-cover py-[60px] px-[15px] text-white -mt-[30px];
+  @apply bg-primary-color py-15 px-3.75 text-white overflow-hidden;
 }
 
 .newsletter-section .container {
-  @apply flex justify-center md:justify-between items-center flex-wrap gap-[20px] text-center md:text-left;
+  @apply flex justify-center md:justify-between items-center flex-wrap gap-5 text-center md:text-left;
 }
 
 .newsletter-text .subtitle {
-  @apply text-secondary-color font-semibold;
+  @apply text-black font-semibold;
 }
 
 .newsletter-text h2 {
-  @apply m-0 mt-[10px] text-[32px] font-bold;
+  @apply m-0 mt-2.5 text-[24px] sm:text-[32px] font-bold;
 }
 
 .newsletter-form {
-  @apply flex bg-white p-[5px] rounded-[50px] w-full max-w-[500px];
+  @apply flex flex-col sm:flex-row bg-white p-1.25 rounded-[25px] sm:rounded-[50px] w-full max-w-125 gap-2 sm:gap-0;
 }
 
 .newsletter-form input {
-  @apply border-none p-[15px] rounded-[50px] grow outline-none text-text-main;
+  @apply border-none p-3 sm:p-3.75 rounded-[50px] grow min-w-0 outline-none text-text-main text-sm sm:text-base;
 }
 
 .newsletter-form button {
-  @apply bg-primary-color text-white border-none rounded-[50px] px-[25px] cursor-pointer font-medium;
+  @apply bg-primary-color text-white border-none rounded-[50px] px-5 py-3 sm:py-3.75 cursor-pointer font-medium whitespace-nowrap text-sm sm:text-base shrink-0;
 }
 
-/* --- Footer --- */
-.footer {
-  @apply bg-footer-bg text-white/80 pt-[80px] px-[15px] pb-0 text-[15px];
-}
-
-.footer-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] lg:gap-[40px] pb-[50px];
-}
-
-.footer h4 {
-  @apply text-white m-0 mb-[20px] text-[18px];
-}
-
-.footer-brand p {
-  @apply mb-[25px] leading-[1.7];
-}
-
-.social-icons {
-  @apply flex gap-[10px];
-}
-
-.social-icons button {
-  @apply bg-navy-dark text-white/60 border-none w-[40px] h-[40px] rounded-full cursor-pointer flex items-center justify-center;
-}
-
-.footer-links ul {
-  @apply list-none m-0 p-0;
-}
-
-.footer-links li {
-  @apply mb-[15px] cursor-pointer hover:text-white;
-}
-
-.footer-email-form {
-  @apply bg-white rounded-[5px] flex overflow-hidden mt-[15px];
-}
-
-.footer-email-form input {
-  @apply p-[15px] border-none grow outline-none text-text-main;
-}
-
-.footer-email-form button {
-  @apply bg-primary-color text-white border-none px-[15px] cursor-pointer;
-}
-
-.footer-bottom {
-  @apply border-t border-white/10 py-[20px] bg-footer-bottom;
-}
-
-.footer-bottom .container {
-  @apply flex flex-col sm:flex-row justify-between items-center text-[14px] gap-2.5 sm:gap-0;
-}
-
-.footer-bottom p {
-  @apply m-0;
-}
-
-.footer-bottom-links {
-  @apply flex gap-[20px];
+footer {
+  @apply -mt-2.5
 }

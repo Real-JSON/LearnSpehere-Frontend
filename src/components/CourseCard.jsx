@@ -3,14 +3,14 @@ import React from 'react'
 const CourseCard = ({ course }) => {
     const { title, instructor, rating, students, price, originalPrice, duration, lectures, image, authorImg, category } = course;
   return (
-    <div className="course-card">
+    <div className="course-card-c">
         <div className="card-image-wrapper">
             <img src={image} alt={title} className="course-image" />
             <span className="category-badge">{category}</span>
             <button className="whishlist-button"><i className="far fa-heart"></i></button>
         </div>
 
-        <div className="card-content">
+        <div className="course-card-content">
             <div className="author-info">
                 <img src={authorImg} alt={instructor} className="author-image" />
                 <span className="author-name">{instructor}</span>
