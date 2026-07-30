@@ -19,7 +19,7 @@ const PopularCourses = () => {
             <div className="course-content">
               <div className="course">
                 <div className="course-icon">
-                  <i class="ri-graduation-cap-fill"></i>
+                  <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <div className="course-name">
                   <h3>Online Degrees</h3>
@@ -31,7 +31,7 @@ const PopularCourses = () => {
               </div>
               <div className="course">
                 <div className="course-icon">
-                  <i class="ri-book-open-fill"></i>
+                  <i class="fa-solid fa-book-open"></i>
                 </div>
                 <div className="course-name">
                   <h3>20+ Lessons</h3>
@@ -43,7 +43,7 @@ const PopularCourses = () => {
               </div>
               <div className="course">
                 <div className="course-icon">
-                  <i class="ri-play-large-fill"></i>
+                  <i class="fa-solid fa-play"></i>
                 </div>
                 <div className="course-name">
                   <h3>Lifetime Access</h3>
@@ -55,7 +55,7 @@ const PopularCourses = () => {
               </div>
               <div className="course">
                 <div className="course-icon">
-                  <i class="ri-group-fill"></i>
+                  <i class="fa-solid fa-users"></i>
                 </div>
                 <div className="course-name">
                   <h3>Community Support</h3>
@@ -82,14 +82,14 @@ const PopularCourses = () => {
           <div className="course-card-area">
             <div className="course-card">
               <div className="card-image">
-                <img src={courseImg1} alt="" />
+                <img src={courseImg1} alt="course-image" />
               </div>
               <div className="card-content">
                 <h3>Artificial Intelligence & Machine Learning</h3>
                 <div className="content-of-card">
                   <p>Catergorized</p>
                   <p>
-                    <i class="ri-user-fill"></i> John Doe
+                    <i className="fa-solid fa-user"></i> John Doe
                   </p>
                 </div>
                 <br />
@@ -110,14 +110,14 @@ const PopularCourses = () => {
             </div>
             <div className="course-card">
               <div className="card-image">
-                <img src={courseImg2} alt="" />
+                <img src={courseImg2} alt="course-image" />
               </div>
               <div className="card-content">
                 <h3>Neural Network & Crypto Currency Sellers</h3>
                 <div className="content-of-card">
                   <p>Catergorized</p>
                   <p>
-                    <i class="ri-user-fill"></i> Smith John
+                    <i className="fa-solid fa-user"></i> Smith John
                   </p>
                 </div>
                 <br />
@@ -138,14 +138,14 @@ const PopularCourses = () => {
             </div>
             <div className="course-card">
               <div className="card-image">
-                <img src={courseImg3} alt="" />
+                <img src={courseImg3} alt="course-image" />
               </div>
               <div className="card-content">
                 <h3>Cloud Computing & Infastructure Architecture</h3>
                 <div className="content-of-card">
                   <p>Catergorized</p>
                   <p>
-                    <i class="ri-user-fill"></i> Carl Smith
+                    <i className="fa-solid fa-user"></i> Carl Smith
                   </p>
                 </div>
                 <br />

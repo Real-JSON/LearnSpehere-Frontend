@@ -16,17 +16,17 @@ const Footer = () => {
             Empowering the next generation of professionals. LearnSphere brings high-quality courses, industry experts, and flexible online learning directly to your fingertips.
           </p>
           <div className="socials">
-            <a href="">
-              <i class="ri-facebook-fill"></i>
+            <a href="#">
+              <i className="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="">
-              <i class="ri-twitter-fill"></i>
+            <a href="#">
+              <i className="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="">
-              <i class="ri-dribbble-fill"></i>
+            <a href="#">
+              <i className="fa-brands fa-dribbble"></i>
             </a>
-            <a href="">
-              <i class="ri-instagram-line"></i>
+            <a href="#">
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>

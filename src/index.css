@@ -158,7 +158,7 @@ img {
 }
 
 .course-icon i {
-  @apply text-white text-center bg-(--main-color) px-2.5 py-1.5 rounded-full text-[32px];
+  @apply text-white text-center bg-(--main-color) px-2.5 py-1.5 rounded-full text-[26px];
 }
 
 .course-name {

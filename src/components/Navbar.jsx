@@ -30,7 +30,7 @@ export default function ModernNavbar() {
             onClick={closeMenu}
             aria-label="Close navigation menu"
           >
-            <i className="ri-close-line"></i>
+            <i className="fa-solid fa-xmark"></i>
           </button>
 
           {/* Navigation Links */}
@@ -65,7 +65,7 @@ export default function ModernNavbar() {
           {/* Mobile Auth Buttons inside drawer */}
           <div className="nav-auth-mobile">
             <Link to="/signin" className="btn btn-outline" onClick={closeMenu}>
-              <i className="ri-user-line"></i> Sign In
+             <i className="fa-solid fa-user"></i> Sign In
             </Link>
             <Link
               to="/register"
@@ -81,7 +81,7 @@ export default function ModernNavbar() {
         <div className="header-actions">
           <div className="nav-auth-desktop">
             <Link to="/signin" className="btn btn-outline">
-              <i className="ri-user-line"></i> Sign In
+              <i className="fa-solid fa-user"></i> Sign In
             </Link>
             <Link to="/register" className="btn btn-primary">
               Register
@@ -94,7 +94,7 @@ export default function ModernNavbar() {
             onClick={toggleMenu}
             aria-label="Open navigation menu"
           >
-            <i className="ri-menu-line"></i>
+            <i className="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>

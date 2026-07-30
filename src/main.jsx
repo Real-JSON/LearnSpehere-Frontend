@@ -9,11 +9,6 @@ import SignIn from './routes/SignIn.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './routes/Register.jsx';
 // import Dashboard from './pages/Dashboard.jsx';
-import DashboardMain from './components/DashboardComponent/DashboardMain.jsx';
-import Subject from './components/SubjectComponent/Subject.jsx';
-import StickyHeadTable from './components/PaymentTable/StickyHeadTable.jsx';
-import SubjectCard from './components/SubjectCard/SubjecCard.jsx';
-import PaymentCard from './components/PaymentCard/PaymentCard.jsx';
 import Course from './pages/Course.jsx';
 
 const router = createBrowserRouter([
